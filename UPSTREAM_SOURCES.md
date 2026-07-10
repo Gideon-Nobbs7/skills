@@ -99,6 +99,60 @@ deliberately port changes that still fit the godfile's phase and one-home rules.
 | --- | --- | --- | --- |
 | `core-verify-ui-and-visual-verification` | `core/4-verify/ui-and-visual-verification/references/upstream-agentation-README.md` | `README.md` | Visual annotations become structured, inspectable context during UI verification. |
 
+## OakOSS — localization engineering
+
+- Repository: <https://github.com/oakoss/agent-skills>
+- Assessed revision: [`0283bed313563d5677a0838f4bf921b03296cf6c`](https://github.com/oakoss/agent-skills/tree/0283bed313563d5677a0838f4bf921b03296cf6c)
+- License: imported skill metadata declares MIT; repository package metadata declares ISC and no root
+  `LICENSE` file was present in the shallow snapshot. Re-check licensing before broad redistribution.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-build-localization-implementation` | `core/3-build/localization-implementation/references/upstream-oakoss-localization-engineer/` | `skills/localization-engineer/` | ICU, CLDR, locale routing, RTL, Paraglide, and i18next implementation details belong in Build. |
+
+## Mindrally — localization l10n
+
+- Repository: <https://github.com/mindrally/skills>
+- Assessed revision: [`05a71308897983093248d719a2ffa1bca61d0768`](https://github.com/mindrally/skills/tree/05a71308897983093248d719a2ffa1bca61d0768)
+- Local license copy: [`licenses/mindrally-skills-LICENSE.txt`](licenses/mindrally-skills-LICENSE.txt)
+- License: Apache License 2.0; retain attribution and notices when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-design-content-and-localization` | `core/2-design/content-and-localization/references/upstream-mindrally-localization-l10n.md` | `localization-l10n/SKILL.md` | Regional variants, cultural adaptation, layout expansion, and l10n QA affect design readiness. |
+| `core-build-localization-implementation` | `core/3-build/localization-implementation/references/upstream-mindrally-localization-l10n.md` | `localization-l10n/SKILL.md` | Translation files, locale formatting, detection, API integration, and QA also inform implementation. |
+
+## WondELAI — web typography
+
+- Repository: <https://github.com/wondelai/skills>
+- Assessed revision: [`326b3801223ad277ae7082ff85435ba1d36e1903`](https://github.com/wondelai/skills/tree/326b3801223ad277ae7082ff85435ba1d36e1903)
+- Local license copy: [`licenses/wondelai-skills-LICENSE.txt`](licenses/wondelai-skills-LICENSE.txt)
+- License: MIT (copyright Wondel.ai sp. z o.o., 2025); retain attribution when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-design-typography` | `core/2-design/typography/references/upstream-wondelai-web-typography/` | `web-typography/` | Readability, typeface selection, pairing, hierarchy, responsive type, and font performance belong in the core typography foundation. |
+
+## Bencium — UI typography
+
+- Repository: <https://github.com/bencium/bencium-marketplace>
+- Assessed revision: [`9db32365ca5755a6ca9b5ff8d88ff384ca47b015`](https://github.com/bencium/bencium-marketplace/tree/9db32365ca5755a6ca9b5ff8d88ff384ca47b015)
+- License: no root license or skill-level license metadata was found in the shallow snapshot. Re-check
+  licensing before broad redistribution.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-design-typography` | `core/2-design/typography/references/upstream-bencium-ui-typography.md`, `core/2-design/typography/references/upstream-bencium-css-templates.md`, `core/2-design/typography/references/upstream-bencium-html-entities.md` | `typography/skills/typography/SKILL.md`, `typography/skills/typography/css-templates.md`, `typography/skills/typography/html-entities.md` | Typographic correctness, punctuation, spacing, entities, and CSS baselines strengthen the core typography rules. |
+
+## You — state and data foundation
+
+- Local source: `core/3-build/state-and-data/references/state-data-fetching-offline-input-reference.md`
+- Source note: provided by you as a local attachment for the godfile.
+
+| Godfile skill | Local imported source | Placement rationale |
+| --- | --- | --- |
+| `core-build-state-and-data` | `core/3-build/state-and-data/references/state-data-fetching-offline-input-reference.md` | State taxonomy, fetching, caching, offline sync, conflict handling, and forms belong in Build. |
+
 ## You — original godfile direction
 
 Every skill not listed in an external-skill table above is tagged as **from you**: it is your

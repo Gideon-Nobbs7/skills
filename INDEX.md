@@ -78,10 +78,10 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 ## core/2-design
 
 - [x] [`core-design-animation-vocabulary`](core/2-design/animation-vocabulary/SKILL.md) — draft
-- [ ] [`core-design-content-and-localization`](core/2-design/content-and-localization/SKILL.md) — stub
+- [x] [`core-design-content-and-localization`](core/2-design/content-and-localization/SKILL.md) — draft
 - [x] [`core-design-design-engineering`](core/2-design/design-engineering/SKILL.md) — draft
 - [x] [`core-design-fluid-interactions`](core/2-design/fluid-interactions/SKILL.md) — draft
-- [ ] [`core-design-typography`](core/2-design/typography/SKILL.md) — stub
+- [x] [`core-design-typography`](core/2-design/typography/SKILL.md) — draft
 - [x] [`core-design-ux-and-flows`](core/2-design/ux-and-flows/SKILL.md) — draft
 
 ## core/3-build
@@ -89,10 +89,10 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 - [x] [`core-build-accessibility-implementation`](core/3-build/accessibility-implementation/SKILL.md) — draft
 - [x] [`core-build-apis-and-contracts`](core/3-build/apis-and-contracts/SKILL.md) — draft
 - [x] [`core-build-architecture-in-practice`](core/3-build/architecture-in-practice/SKILL.md) — draft
-- [ ] [`core-build-localization-implementation`](core/3-build/localization-implementation/SKILL.md) — stub
+- [x] [`core-build-localization-implementation`](core/3-build/localization-implementation/SKILL.md) — draft
 - [x] [`core-build-performance-engineering`](core/3-build/performance-engineering/SKILL.md) — draft
 - [x] [`core-build-secure-coding`](core/3-build/secure-coding/SKILL.md) — draft
-- [ ] [`core-build-state-and-data`](core/3-build/state-and-data/SKILL.md) — stub
+- [x] [`core-build-state-and-data`](core/3-build/state-and-data/SKILL.md) — draft
 - [x] [`core-build-ui-engineering`](core/3-build/ui-engineering/SKILL.md) — draft
 
 ## core/4-verify
