@@ -13,8 +13,6 @@ place in this hierarchy. The content of each section will evolve; the shape of t
 stable. Section content lives in `phases/` and `tracks/` — each section there carries an
 *areas under consideration* checklist that gets filled in as material arrives.
 
----
-
 ## How the system is organized (the three axes)
 
 1. **Lifecycle phases** — the spine. The stages every project moves through:
@@ -42,8 +40,6 @@ skills inside each track.
 overlays for the platform(s) in play. Specific beats general; foundations are never overridden
 silently.
 
----
-
 ## 0. Foundations (always-on, phase-independent)
 
 The non-negotiables loaded for every project regardless of phase or platform.
@@ -59,8 +55,6 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **0.7 Performance as a core value** — performance is not a phase; budgets are set at setup,
   spent during build, verified before ship, and watched in operation. Latency is UX.
 
----
-
 ## 1. Setup — before the first real line of code
 
 - **1.1 Scoping & requirements** — what are we building, for whom, success criteria, constraints.
@@ -72,8 +66,6 @@ The non-negotiables loaded for every project regardless of phase or platform.
   choice (build vs adopt).
 - **1.6 CI skeleton** — the minimal pipeline that exists before features do.
 
----
-
 ## 2. Design — deciding what it looks, feels, and behaves like
 
 - **2.1 UX & flows** — information architecture, navigation models, user flows,
@@ -81,16 +73,19 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **2.2 Visual design** — layout, spacing, color, elevation/depth, iconography.
 - **2.3 Typography** — scales, optical sizing, tracking/leading, responsive type, font loading.
 - **2.4 Motion & interaction**
+  - **2.4.0 Design engineering** — interaction polish, visual coherence, and the decision
+    framework that determines whether motion belongs at all.
   - **2.4.1 Full-scale interactions** — page transitions, gestures, drag/swipe/sheets,
     scroll-driven behavior.
   - **2.4.2 Micro-interactions** — hover/press states, springs, feedback details, easing choices,
     interruptibility, reduced-motion.
+  - **2.4.3 Fluid interactions** — direct manipulation, gesture velocity, momentum, and
+    interruptible drag/sheet behavior.
+  - **2.4.4 Animation vocabulary** — the precise terms used to specify intended effects.
 - **2.5 Content & localization readiness** — copy tone, i18n-aware design (text expansion, RTL),
   formatting (dates, numbers, currency).
 - **2.6 Platform design conventions** — where web, iOS, and Android intentionally diverge
   (defers to the platform tracks in §7).
-
----
 
 ## 3. Build — writing the thing
 
@@ -108,8 +103,6 @@ The non-negotiables loaded for every project regardless of phase or platform.
   behavior, touch targets.
 - **3.8 Localization implementation** — string externalization, pluralization, locale plumbing.
 
----
-
 ## 4. Verify — proving it works before it ships
 
 - **4.1 Testing strategy** — what to test at which layer per project type; the testing pyramid
@@ -117,14 +110,14 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **4.2 Test authoring** — unit, integration, e2e; fixtures, mocking philosophy, flake resistance.
 - **4.3 UI & visual verification** — visual regression, interaction/motion testing,
   cross-browser / cross-device matrices.
+  - **4.3.1 Motion review** — a craft and performance gate for transitions, gestures, and
+    reduced-motion behavior.
 - **4.4 Accessibility auditing** — automated checks + manual audit flow (keyboard pass,
   screen-reader pass, contrast).
 - **4.5 Performance verification** — profiling, load testing, Core Web Vitals / app startup &
   frame metrics.
 - **4.6 Security review** — pre-ship security pass, dependency audit, secret scanning.
 - **4.7 Code review standards** — what review looks for, how findings are ranked and resolved.
-
----
 
 ## 5. Ship — getting it into the world
 
@@ -136,8 +129,6 @@ The non-negotiables loaded for every project regardless of phase or platform.
   review-guideline compliance.
 - **5.6 Launch checklist** — the final gate: monitoring live, alarms set, rollback tested.
 
----
-
 ## 6. Operate — after it ships
 
 - **6.1 Observability** — logging, metrics, tracing, error tracking; what "healthy" means.
@@ -146,8 +137,6 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **6.4 Feedback & iteration** — analytics review, user feedback loops, deciding what's next.
 - **6.5 Documentation & knowledge** — what gets documented, where it lives, keeping it honest.
 - **6.6 Sunsetting** — deprecating features/projects cleanly.
-
----
 
 ## 7. Platform tracks (overlays on phases 1–6)
 
@@ -211,9 +200,11 @@ Each track only contains what *differs* from the shared baseline above.
   embedding pipelines, model versioning, drift monitoring.
 
 ### 7.P Papers (composition, not research)
+
 Writing papers with AI — the craft of composing them, not conducting the research. The phases
 map naturally: setup = venue/template/tooling, design = argument & figure design, build =
 drafting, verify = revision, ship = submission.
+
 - **7.P.1 Venue & tooling setup** — target venue/format, LaTeX/Typst/Word template, reference
   manager, style-guide constraints.
 - **7.P.2 Structure & argument design** — outline, narrative arc, what each section must
@@ -234,16 +225,16 @@ drafting, verify = revision, ship = submission.
   writing.
 
 ### 7.BL Blogs (deliberately lighter than papers)
+
 Posts about things learned, written to showcase them. Defining constraint: **the user's words
 stay central** — they participate actively in the writing; agents support (structure, editing,
 media) rather than ghostwrite. Surface-level for now; depth comes later.
+
 - **7.BL.1 Post design** — angle, shape, and structure of a learn-and-showcase post.
 - **7.BL.2 Voice & participation** — how the user's voice is preserved; what agents may and
   may not draft.
 - **7.BL.3 Showcase & media** — code snippets, demos, screenshots, figures in posts.
 - **7.BL.4 Publishing & sharing** — platform, formatting, distribution.
-
----
 
 ## Finding the right skill (navigation & discovery)
 
@@ -296,7 +287,7 @@ act on → update `INDEX.md`.
 
 ## Installation
 
-```
+```sh
 ./install.sh              # symlink every skill into ~/.claude/skills (system-wide)
 ./install.sh --uninstall  # remove them
 ```

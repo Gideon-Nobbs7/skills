@@ -1,7 +1,6 @@
-# Godfile Index
+# Godfile Skill Index
 
-Every skill and its status. Tick a skill's checklist inside its SKILL.md during intake;
-flip its status here when it moves stub → draft → ready.
+One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## ai-ml/1-setup
 
@@ -10,7 +9,7 @@ flip its status here when it moves stub → draft → ready.
 ## ai-ml/3-build
 
 - [ ] [`ai-ml-build-agents-and-tools`](ai-ml/3-build/agents-and-tools/SKILL.md) — stub
-- [ ] [`ai-ml-build-ai-security`](ai-ml/3-build/ai-security/SKILL.md) — stub
+- [x] [`ai-ml-build-ai-security`](ai-ml/3-build/ai-security/SKILL.md) — draft
 - [ ] [`ai-ml-build-llm-app-architecture`](ai-ml/3-build/llm-app-architecture/SKILL.md) — stub
 - [ ] [`ai-ml-build-ml-data-pipelines`](ai-ml/3-build/ml-data-pipelines/SKILL.md) — stub
 - [ ] [`ai-ml-build-prompting-and-context`](ai-ml/3-build/prompting-and-context/SKILL.md) — stub
@@ -25,7 +24,7 @@ flip its status here when it moves stub → draft → ready.
 
 ## backend/1-setup
 
-- [ ] [`backend-setup-service-architecture`](backend/1-setup/service-architecture/SKILL.md) — stub
+- [x] [`backend-setup-service-architecture`](backend/1-setup/service-architecture/SKILL.md) — draft
 
 ## backend/3-build
 
@@ -40,7 +39,7 @@ flip its status here when it moves stub → draft → ready.
 ## blogs/3-build
 
 - [ ] [`blogs-build-showcase-and-media`](blogs/3-build/showcase-and-media/SKILL.md) — stub
-- [ ] [`blogs-build-voice-and-participation`](blogs/3-build/voice-and-participation/SKILL.md) — stub
+- [x] [`blogs-build-voice-and-participation`](blogs/3-build/voice-and-participation/SKILL.md) — draft
 
 ## blogs/5-ship
 
@@ -59,66 +58,72 @@ flip its status here when it moves stub → draft → ready.
 - [ ] [`core-foundations-accessibility-baseline`](core/0-foundations/accessibility-baseline/SKILL.md) — stub
 - [ ] [`core-foundations-code-style`](core/0-foundations/code-style/SKILL.md) — stub
 - [ ] [`core-foundations-design-principles`](core/0-foundations/design-principles/SKILL.md) — stub
-- [ ] [`core-foundations-engineering-principles`](core/0-foundations/engineering-principles/SKILL.md) — stub
-- [ ] [`godfile-navigator`](core/0-foundations/navigator/SKILL.md) — ready
-- [ ] [`core-foundations-performance-values`](core/0-foundations/performance-values/SKILL.md) — stub
+- [x] [`core-foundations-engineering-principles`](core/0-foundations/engineering-principles/SKILL.md) — draft
+- [x] [`godfile-navigator`](core/0-foundations/navigator/SKILL.md) — ready
+- [x] [`core-foundations-performance-values`](core/0-foundations/performance-values/SKILL.md) — draft
 - [ ] [`core-foundations-security-mindset`](core/0-foundations/security-mindset/SKILL.md) — stub
 - [ ] [`core-foundations-vocabulary`](core/0-foundations/vocabulary/SKILL.md) — stub
+- [x] [`core-foundations-writing-skills`](core/0-foundations/writing-skills/SKILL.md) — draft
 
 ## core/1-setup
 
-- [ ] [`core-setup-ci-skeleton`](core/1-setup/ci-skeleton/SKILL.md) — stub
+- [x] [`core-setup-ci-skeleton`](core/1-setup/ci-skeleton/SKILL.md) — draft
 - [ ] [`core-setup-design-system-bootstrap`](core/1-setup/design-system-bootstrap/SKILL.md) — stub
 - [ ] [`core-setup-env-and-secrets`](core/1-setup/env-and-secrets/SKILL.md) — stub
-- [ ] [`core-setup-repo-and-tooling-bootstrap`](core/1-setup/repo-and-tooling-bootstrap/SKILL.md) — stub
-- [ ] [`core-setup-scoping-and-requirements`](core/1-setup/scoping-and-requirements/SKILL.md) — stub
+- [x] [`core-setup-planning-and-work-breakdown`](core/1-setup/planning-and-work-breakdown/SKILL.md) — draft
+- [x] [`core-setup-repo-and-tooling-bootstrap`](core/1-setup/repo-and-tooling-bootstrap/SKILL.md) — draft
+- [x] [`core-setup-scoping-and-requirements`](core/1-setup/scoping-and-requirements/SKILL.md) — draft
 - [ ] [`core-setup-stack-and-architecture-selection`](core/1-setup/stack-and-architecture-selection/SKILL.md) — stub
 
 ## core/2-design
 
+- [x] [`core-design-animation-vocabulary`](core/2-design/animation-vocabulary/SKILL.md) — draft
 - [ ] [`core-design-content-and-localization`](core/2-design/content-and-localization/SKILL.md) — stub
+- [x] [`core-design-design-engineering`](core/2-design/design-engineering/SKILL.md) — draft
+- [x] [`core-design-fluid-interactions`](core/2-design/fluid-interactions/SKILL.md) — draft
 - [ ] [`core-design-interactions`](core/2-design/interactions/SKILL.md) — stub
 - [ ] [`core-design-micro-interactions`](core/2-design/micro-interactions/SKILL.md) — stub
 - [ ] [`core-design-typography`](core/2-design/typography/SKILL.md) — stub
-- [ ] [`core-design-ux-and-flows`](core/2-design/ux-and-flows/SKILL.md) — stub
+- [x] [`core-design-ux-and-flows`](core/2-design/ux-and-flows/SKILL.md) — draft
 - [ ] [`core-design-visual-design`](core/2-design/visual-design/SKILL.md) — stub
 
 ## core/3-build
 
 - [ ] [`core-build-accessibility-implementation`](core/3-build/accessibility-implementation/SKILL.md) — stub
-- [ ] [`core-build-apis-and-contracts`](core/3-build/apis-and-contracts/SKILL.md) — stub
-- [ ] [`core-build-architecture-in-practice`](core/3-build/architecture-in-practice/SKILL.md) — stub
+- [x] [`core-build-apis-and-contracts`](core/3-build/apis-and-contracts/SKILL.md) — draft
+- [x] [`core-build-architecture-in-practice`](core/3-build/architecture-in-practice/SKILL.md) — draft
 - [ ] [`core-build-localization-implementation`](core/3-build/localization-implementation/SKILL.md) — stub
-- [ ] [`core-build-performance-engineering`](core/3-build/performance-engineering/SKILL.md) — stub
-- [ ] [`core-build-secure-coding`](core/3-build/secure-coding/SKILL.md) — stub
+- [x] [`core-build-performance-engineering`](core/3-build/performance-engineering/SKILL.md) — draft
+- [x] [`core-build-secure-coding`](core/3-build/secure-coding/SKILL.md) — draft
 - [ ] [`core-build-state-and-data`](core/3-build/state-and-data/SKILL.md) — stub
 - [ ] [`core-build-ui-engineering`](core/3-build/ui-engineering/SKILL.md) — stub
 
 ## core/4-verify
 
 - [ ] [`core-verify-accessibility-audit`](core/4-verify/accessibility-audit/SKILL.md) — stub
-- [ ] [`core-verify-code-review`](core/4-verify/code-review/SKILL.md) — stub
-- [ ] [`core-verify-performance-verification`](core/4-verify/performance-verification/SKILL.md) — stub
+- [x] [`core-verify-code-review`](core/4-verify/code-review/SKILL.md) — draft
+- [x] [`core-verify-motion-review`](core/4-verify/motion-review/SKILL.md) — draft
+- [x] [`core-verify-performance-verification`](core/4-verify/performance-verification/SKILL.md) — draft
 - [ ] [`core-verify-security-review`](core/4-verify/security-review/SKILL.md) — stub
-- [ ] [`core-verify-test-authoring`](core/4-verify/test-authoring/SKILL.md) — stub
+- [x] [`core-verify-test-authoring`](core/4-verify/test-authoring/SKILL.md) — draft
 - [ ] [`core-verify-testing-strategy`](core/4-verify/testing-strategy/SKILL.md) — stub
-- [ ] [`core-verify-ui-and-visual-verification`](core/4-verify/ui-and-visual-verification/SKILL.md) — stub
+- [x] [`core-verify-ui-and-visual-verification`](core/4-verify/ui-and-visual-verification/SKILL.md) — draft
 
 ## core/5-ship
 
-- [ ] [`core-ship-deployment-strategies`](core/5-ship/deployment-strategies/SKILL.md) — stub
-- [ ] [`core-ship-launch-checklist`](core/5-ship/launch-checklist/SKILL.md) — stub
+- [x] [`core-ship-deployment-strategies`](core/5-ship/deployment-strategies/SKILL.md) — draft
+- [x] [`core-ship-launch-checklist`](core/5-ship/launch-checklist/SKILL.md) — draft
 - [ ] [`core-ship-release-pipeline`](core/5-ship/release-pipeline/SKILL.md) — stub
-- [ ] [`core-ship-versioning-and-change-communication`](core/5-ship/versioning-and-change-communication/SKILL.md) — stub
+- [x] [`core-ship-versioning-and-change-communication`](core/5-ship/versioning-and-change-communication/SKILL.md) — draft
 
 ## core/6-operate
 
-- [ ] [`core-operate-documentation`](core/6-operate/documentation/SKILL.md) — stub
-- [ ] [`core-operate-feedback-and-iteration`](core/6-operate/feedback-and-iteration/SKILL.md) — stub
+- [x] [`core-operate-documentation`](core/6-operate/documentation/SKILL.md) — draft
+- [x] [`core-operate-feedback-and-iteration`](core/6-operate/feedback-and-iteration/SKILL.md) — draft
 - [ ] [`core-operate-incident-response`](core/6-operate/incident-response/SKILL.md) — stub
-- [ ] [`core-operate-maintenance`](core/6-operate/maintenance/SKILL.md) — stub
-- [ ] [`core-operate-observability`](core/6-operate/observability/SKILL.md) — stub
-- [ ] [`core-operate-sunsetting`](core/6-operate/sunsetting/SKILL.md) — stub
+- [x] [`core-operate-maintenance`](core/6-operate/maintenance/SKILL.md) — draft
+- [x] [`core-operate-observability`](core/6-operate/observability/SKILL.md) — draft
+- [x] [`core-operate-sunsetting`](core/6-operate/sunsetting/SKILL.md) — draft
 
 ## libraries/2-design
 
