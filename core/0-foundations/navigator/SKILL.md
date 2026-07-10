@@ -18,7 +18,13 @@ godfile skill is named `<track>-<phase>-<slug>` (e.g. `core-design-typography`,
 2. **Identify the phase** — where in the lifecycle this task sits.
 3. **Load in resolution order:**
    `core-foundations-*` (the ones relevant to the work) → `core-<phase>-*` matches →
-   `<track>-<phase>-*` overlays. Specific beats general; foundations are never overridden.
+   `<track>-<phase>-*` overlays. Core owns shared policy; overlays add platform mechanics or narrow
+   how it applies. They do not restate, weaken, or contradict core. Record a genuine platform
+   exception as an explicit project decision rather than a competing default.
+
+Do not load an overlay merely because its track is active. Load it only when its described
+platform-specific concern is part of the task; phases without a meaningful platform delta use core
+alone.
 
 ## Tracks
 

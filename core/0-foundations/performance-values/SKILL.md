@@ -1,6 +1,6 @@
 ---
 name: core-foundations-performance-values
-description: Performance as an always-on value, all tracks — performance engineering is proactive, not testing: objectives grounded in business goals, checkable criteria, and integration into every phase from design onward.
+description: "Performance as an always-on value, all tracks — performance engineering is proactive, not testing: objectives grounded in business goals, checkable criteria, and integration into every phase from design onward."
 status: draft
 ---
 

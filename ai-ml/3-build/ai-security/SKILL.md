@@ -1,6 +1,6 @@
 ---
 name: ai-ml-build-ai-security
-description: Use when building LLM features or agent systems, or when installing/auditing agent skills — OWASP LLM Top 10 patterns (prompt injection, output handling, excessive agency) and the OWASP Agentic Skills Top 10 (malicious skills, supply chain, over-privilege, isolation, governance).
+description: Use when building, reviewing, or operating ML, LLM, agent, retrieval, or tool-using systems and when installing agent skills; applies responsible-AI impact review, prompt-injection and output controls, least agency, data protection, human oversight, and agentic supply-chain security.
 status: draft
 ---
 
@@ -12,16 +12,6 @@ the [LLM Top 10 (2025)](https://genai.owasp.org/llm-top-10/) patterns via Addy O
 `security-and-hardening`, and the
 [Agentic Skills Top 10](https://owasp.org/www-project-agentic-skills-top-10/checklist.html)
 — which doubles as the audit standard for this godfile system itself.
-
-## Areas under consideration
-- [x] Prompt injection & output handling — LLM01/LLM05 patterns
-- [x] Agent permissioning — LLM06 excessive agency
-- [x] Data leakage — what never enters a prompt; RAG isolation
-- [x] Agentic skill security — the AST01–AST10 considerations
-- [ ] Guardrails — input/output filtering tooling preferences
-- [ ] Eval-time security testing (red-teaming cadence — ties to `ai-ml-verify-evals`)
-
-## Skill
 
 ### Building LLM features
 
@@ -42,6 +32,15 @@ the [LLM Top 10 (2025)](https://genai.owasp.org/llm-top-10/) patterns via Addy O
 - **Isolate retrieval data** (LLM08). The vector store is a trust boundary: partition
   embeddings per tenant; validate documents before indexing so poisoned content can't
   steer answers.
+- **Layer guardrails without confusing them for authorization**. Combine deterministic size/schema
+  limits, relevance and safety classifiers, moderation where appropriate, privacy filters, output
+  validation, and tool-risk checks according to the threat model. Evaluate false acceptance and
+  false rejection; a guardrail that users must evade to complete normal work is an operational
+  failure.
+- **Red-team through evals**. Maintain adversarial cases for injection, data exfiltration,
+  cross-tenant retrieval, unauthorized and high-risk tools, encoded/indirect instructions,
+  excessive loops, unsafe output rendering, and human-escalation failure. Run the affected suite on
+  every model, prompt, retrieval, tool, framework, or guardrail change through `ai-ml-verify-evals`.
 
 ### Installing and auditing agent skills (AST01–AST10)
 
@@ -84,3 +83,18 @@ External material gets adapted, never executed or symlinked verbatim from a remo
 sources are cited in each skill so provenance is auditable; the user reviews placement
 before intake (standing rule); and any future skill that instructs agents to fetch remote
 content at run-time must pin or vet those references (AST05).
+
+### Responsible AI throughout the lifecycle
+
+Use the Microsoft checklist summarized in
+`ai-ml-build-ml-data-pipelines/references/source-notes-microsoft-ml-playbook.md`. Begin the impact
+review during problem formulation and revisit it after feasibility, before production, and during
+monitoring. Record affected stakeholders and vulnerable groups, benefits and harms, misuse and
+failure paths, data representativeness, fairness, reliability/safety, privacy/security,
+inclusiveness/accessibility, transparency, accountability, consequential decisions, human fallback,
+appeal/correction, and retirement.
+
+First ask whether a non-technical or deterministic solution can meet the need with less harm. For a
+material risk, name an owner, prevention control, detection signal, response, residual risk, and
+evidence that the control works. Do not ship a high-impact automated decision without accountable
+human review and a usable challenge or correction path.

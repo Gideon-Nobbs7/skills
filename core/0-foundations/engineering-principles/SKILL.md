@@ -1,6 +1,6 @@
 ---
 name: core-foundations-engineering-principles
-description: Always-on engineering values for every technical decision, all tracks — including source-driven development: ground framework-specific code in current official docs, detect versions first, cite sources, flag the unverified.
+description: "Always-on engineering values for every technical decision, all tracks — including source-driven development: ground framework-specific code in current official docs, detect versions first, cite sources, flag the unverified."
 status: draft
 ---
 

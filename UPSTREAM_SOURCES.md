@@ -144,6 +144,110 @@ deliberately port changes that still fit the godfile's phase and one-home rules.
 | --- | --- | --- | --- |
 | `core-design-typography` | `core/2-design/typography/references/upstream-bencium-ui-typography.md`, `core/2-design/typography/references/upstream-bencium-css-templates.md`, `core/2-design/typography/references/upstream-bencium-html-entities.md` | `typography/skills/typography/SKILL.md`, `typography/skills/typography/css-templates.md`, `typography/skills/typography/html-entities.md` | Typographic correctness, punctuation, spacing, entities, and CSS baselines strengthen the core typography rules. |
 
+## IBM — AI agent building guidance
+
+- Documentary source: <https://www.ibm.com/think/topics/how-to-build-an-ai-agent>
+- Author: Dave Bergmann
+- Assessed: 2026-07-10
+- Local snapshot: attributed paraphrase notes; no runtime fetching and no substantial source text
+  republished.
+
+| Godfile skill | Local source notes | Placement rationale |
+| --- | --- | --- |
+| `ai-ml-build-llm-app-architecture` | `ai-ml/3-build/llm-app-architecture/references/source-notes-agent-building-guides.md` | Purpose, users, tools, knowledge, model fit, measurement, and framework/platform choice shape the LLM architecture. |
+
+## OpenAI — practical agent-building guide
+
+- Documentary source: <https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/>
+- Author: OpenAI
+- Assessed: 2026-07-10
+- Local snapshot: attributed paraphrase notes; no runtime fetching and no substantial source text
+  republished.
+
+| Godfile skill | Local source notes | Placement rationale |
+| --- | --- | --- |
+| `ai-ml-build-llm-app-architecture` | `ai-ml/3-build/llm-app-architecture/references/source-notes-agent-building-guides.md` | Model, tool, instruction, orchestration, layered-guardrail, and human-intervention guidance belongs in LLM application architecture. |
+
+## Anthropic — effective agent patterns
+
+- Documentary source: <https://www.anthropic.com/engineering/building-effective-agents>
+- Author: Anthropic
+- Published: 2024-12-19; assessed: 2026-07-10
+- Local snapshot: attributed paraphrase notes; no runtime fetching and no substantial source text
+  republished.
+
+| Godfile skill | Local source notes | Placement rationale |
+| --- | --- | --- |
+| `ai-ml-build-llm-app-architecture` | `ai-ml/3-build/llm-app-architecture/references/source-notes-agent-building-guides.md` | The workflow-versus-agent distinction and progressive orchestration patterns govern architectural complexity. |
+
+## JetBrains — agentic framework comparison
+
+- Documentary source: <https://blog.jetbrains.com/pycharm/2026/06/top-agentic-frameworks-for-building-applications-2026/>
+- Author: Evgenia Verbina
+- Published: 2026-06; assessed: 2026-07-10
+- Local snapshot: attributed paraphrase notes; no runtime fetching and no substantial source text
+  republished.
+
+| Godfile skill | Local source notes | Placement rationale |
+| --- | --- | --- |
+| `ai-ml-build-llm-app-architecture` | `ai-ml/3-build/llm-app-architecture/references/source-notes-agent-building-guides.md` | Framework categories inform a project-specific trade study without becoming permanent framework defaults. |
+
+## Microsoft ISE — ML and AI Engineering Fundamentals Playbook
+
+- Documentary source: <https://microsoft.github.io/code-with-engineering-playbook/ml-and-ai-projects/>
+- Author: Microsoft Industry Solutions Engineering
+- Source pages reported update: 2025-02-07; assessed: 2026-07-10
+- Local snapshot: attributed paraphrase notes; no runtime fetching and no substantial source text
+  republished.
+
+| Godfile skill | Local source notes | Placement rationale |
+| --- | --- | --- |
+| `ai-ml-build-ml-data-pipelines` | `ai-ml/3-build/ml-data-pipelines/references/source-notes-microsoft-ml-playbook.md` | Envisioning, feasibility, reproducible experimentation, pipeline engineering, and production readiness span the ML data lifecycle. |
+| `ai-ml-build-ai-security` | same local notes, referenced by skill name | Responsible-AI impact review is a security and safety constraint throughout the lifecycle. |
+| `ai-ml-verify-evals` | same local notes, referenced through the pipeline skill | Stakeholder-aligned metrics, baselines, tested evaluation code, and error analysis inform verification. |
+| `ai-ml-operate-model-monitoring` | same local notes, referenced through the pipeline skill | Production ground truth, data/output monitoring, drift, ownership, and retraining belong in operations. |
+
+## Expo — official Expo and EAS skills
+
+- Repository: <https://github.com/expo/skills>
+- Assessed revision: [`b2fdce752bbf8f3ba83883d8a35c642e229c8812`](https://github.com/expo/skills/tree/b2fdce752bbf8f3ba83883d8a35c642e229c8812)
+- Local license copy: [`licenses/expo-skills-MIT.txt`](licenses/expo-skills-MIT.txt)
+- License: MIT (copyright 650 Industries, Inc. / Expo); retain attribution when porting
+  substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `mobile-setup-platform-standards` | `mobile/1-setup/platform-standards/references/upstream-expo-{native-ui,ui}/` | `plugins/expo/skills/{expo-native-ui,expo-ui}/` | Expo-native controls, platform UI, and native UI bindings inform the cross-platform/native boundary. |
+| `mobile-design-views-and-navigation` | `mobile/2-design/views-and-navigation/references/upstream-expo-router/` | `plugins/expo/skills/expo-router/` | Route, stack, tab, modal, and native transition mechanics belong in mobile navigation. |
+| `mobile-design-motion-and-gestures` | `mobile/2-design/motion-and-gestures/references/upstream-expo-{animations,media-haptics}.md` | selected references from `plugins/expo/skills/expo-native-ui/` | Reanimated, gesture-handler, and haptic mechanics implement the shared motion language on Expo. |
+| `mobile-build-device-realities` | `mobile/3-build/device-realities/references/upstream-expo-{data-fetching,module,app-clip}/` | `plugins/expo/skills/{expo-data-fetching,expo-module,expo-app-clip}/` | Offline/networking, native modules, and App Clips are device-specific implementation concerns. |
+| `mobile-ship-mobile-release` | `mobile/5-ship/mobile-release/references/upstream-{eas-app-stores,eas-update-insights,eas-workflows,eas-observe,expo-dev-client}/` | matching directories under `plugins/expo/skills/` | Store submission, beta distribution, OTA health, workflows, and launch metrics implement mobile release mechanics. |
+
+## Paul Hudson — SwiftUI Pro
+
+- Repository: <https://github.com/twostraws/swiftui-agent-skill>
+- Assessed revision: [`be297ff80dddec529af1f9b1f1f114aab6c9d11c`](https://github.com/twostraws/swiftui-agent-skill/tree/be297ff80dddec529af1f9b1f1f114aab6c9d11c)
+- Local license copy: [`licenses/swiftui-agent-skill-MIT.txt`](licenses/swiftui-agent-skill-MIT.txt)
+- License: MIT (copyright Paul Hudson, 2026); retain attribution when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `mobile-setup-platform-standards` | `mobile/1-setup/platform-standards/references/upstream-swiftui-pro/` | `swiftui-pro/` | Native SwiftUI API, view, navigation, data, performance, design, and accessibility guidance informs the Apple implementation path. |
+| `mobile-design-motion-and-gestures` | selected `upstream-swiftui-*.md` files | `swiftui-pro/references/{views,api,accessibility}.md` | SwiftUI animation, haptics, and Reduce Motion mechanics implement the shared mobile motion contract. |
+| `mobile-build-mobile-a11y-and-localization` | selected `upstream-swiftui-*.md` files | `swiftui-pro/references/{accessibility,swift}.md` | VoiceOver, Dynamic Type, Reduce Motion, and locale-aware Swift behavior belong in the mobile accessibility/localization overlay. |
+
+## Community Access — mobile accessibility
+
+- Repository: <https://github.com/Community-Access/accessibility-agents>
+- Assessed revision: [`0872b4a7763145fc0e5847d8357fb446a857c683`](https://github.com/Community-Access/accessibility-agents/tree/0872b4a7763145fc0e5847d8357fb446a857c683)
+- Local license copy: [`licenses/community-access-accessibility-agents-LICENSE.txt`](licenses/community-access-accessibility-agents-LICENSE.txt)
+- License: MIT; project built by and for the blind and low-vision community. Retain attribution
+  when porting substantial text.
+
+| Godfile skill | Local imported source | Upstream path | Placement rationale |
+| --- | --- | --- | --- |
+| `mobile-build-mobile-a11y-and-localization` | `mobile/3-build/mobile-a11y-and-localization/references/upstream-community-access-mobile-accessibility.md` | `codex-skills/mobile-accessibility/SKILL.md` | React Native, Expo, SwiftUI/UIKit, Compose, and Android Views accessibility audit mechanics belong in the mobile build overlay. |
+
 ## You — state and data foundation
 
 - Local source: `core/3-build/state-and-data/references/state-data-fetching-offline-input-reference.md`

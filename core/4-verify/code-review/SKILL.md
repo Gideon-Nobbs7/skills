@@ -1,6 +1,6 @@
 ---
 name: core-verify-code-review
-description: Use when reviewing changes since a fixed point, or when a non-trivial in-flight decision needs adversarial scrutiny — two independent axes (Standards: repo conventions plus a Fowler smell baseline; Spec: does the diff implement what was asked) never merged, plus the bounded doubt cycle (claim → extract → fresh-context adversarial review → reconcile → stop).
+description: "Use when reviewing changes since a fixed point, or when a non-trivial in-flight decision needs adversarial scrutiny — two independent axes (Standards: repo conventions plus a Fowler smell baseline; Spec: does the diff implement what was asked) never merged, plus the bounded doubt cycle (claim → extract → fresh-context adversarial review → reconcile → stop)."
 status: draft
 ---
 

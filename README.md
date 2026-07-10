@@ -37,8 +37,10 @@ skills inside each track.
 
 **Resolution order when building anything:**
 `core/0-foundations` (always) → `core/<current-phase>/` skills → `<track>/<current-phase>/`
-overlays for the platform(s) in play. Specific beats general; foundations are never overridden
-silently.
+overlays for the platform(s) in play. Core owns the shared rule; an overlay may narrow its
+application or add platform mechanics, but it may not restate, weaken, or contradict it. If a
+platform genuinely requires an exception, record that decision explicitly instead of encoding a
+second default.
 
 ## 0. Foundations (always-on, phase-independent)
 
@@ -158,6 +160,8 @@ Each track only contains what *differs* from the shared baseline above.
 - **7.M.4 Device realities** — offline, battery, permissions, notifications, deep links,
   background behavior.
 - **7.M.5 Mobile a11y & localization** — VoiceOver/TalkBack, dynamic type, locale handling.
+- **7.M.6 Mobile release** — signing, beta distribution, App Store/Play submission, staged
+  rollout, OTA compatibility, update health, and rollback.
 
 ### 7.B Backend / API
 

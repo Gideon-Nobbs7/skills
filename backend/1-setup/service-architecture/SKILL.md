@@ -1,54 +1,48 @@
 ---
 name: backend-setup-service-architecture
-description: Use when designing backend/server architecture — the five-layer model, "where is the state?" as the central scaling question, stateless upper layers over a stateful persistence layer, capacity from measured per-request cost, any-machine-can-die.
+description: Use when choosing backend service boundaries, deployment units, runtime topology, state placement, capacity assumptions, or failure domains; extends the core architecture decision with server-specific constraints.
 status: draft
 ---
 
-# Service Architecture
+# Backend Service Architecture
 
-The backend overlay on `core/1-setup/stack-and-architecture-selection`. First filled
-discipline: **scaling architecture**, adapted from Greenspun et al. —
-[Scaling Gracefully](https://philip.greenspun.com/seia/scaling) (technical half; the
-human/community half lives in `core-operate-feedback-and-iteration`).
+Apply `core-setup-stack-and-architecture-selection` first. This skill only adds backend-specific
+decisions; it does not replace the core preference for the smallest architecture that satisfies
+current evidence.
 
-## Areas under consideration
-- [x] Layering and state placement — the scaling shape
-- [x] Capacity planning and failure design
-- [ ] Monolith-first stance — when (if ever) services from day one
-- [ ] Runtime/language defaults for backend work
-- [ ] Data modeling approach — schema design habits, normalization stance
-- [ ] Migration strategy — tooling, forward-only vs reversible
-- [ ] Boundary rules — what earns its own service/queue/database
+## Establish the service shape
 
-## Skill
+1. Start with a modular monolith unless independent deployment, ownership, scaling, fault
+   isolation, regulatory isolation, or incompatible runtime needs earn a separate service.
+2. Draw trust boundaries, synchronous calls, asynchronous flows, state stores, external
+   dependencies, and deployment units. A module boundary is not automatically a network boundary.
+3. Assign each business capability and data invariant one clear owner. Avoid shared-table writes
+   across independently deployed services.
+4. Keep request-processing instances disposable. Put durable state in an intentional persistence
+   system; use external session state only when stateless authentication cannot meet the need.
+5. Record latency budgets, expected load, recovery objectives, consistency needs, and cost limits.
+   Measure before adding replicas, queues, caches, partitions, or regions.
 
-### Think in layers
+## Choose communication deliberately
 
-A production application separates into: TLS termination → HTTP service → presentation
-(page/response assembly) → abstraction (business logic and APIs) → persistence (the
-database and its transactions). Layers scale, get replaced, and get distributed
-independently. The modern mapping: CDN + managed load balancer + stateless application
-containers + managed database with read replicas — autoscaling automates the capacity
-math but doesn't remove the need to know where state lives.
+- Use an in-process call inside one deployment unit.
+- Use synchronous HTTP or RPC when the caller needs an immediate answer and can tolerate the
+  dependency's latency and availability.
+- Use a durable queue or event when work can complete later, needs buffering, or must survive a
+  process failure. Define ownership, ordering, deduplication, retry, and dead-letter behavior.
+- Avoid distributed transactions by designing one invariant owner and explicit workflows. When a
+  multi-step workflow is unavoidable, define compensation and observable intermediate states.
 
-### The central question: where is the state?
+## Design failure domains
 
-Every hard scaling question reduces to it. Stateless layers replicate trivially behind a
-load balancer; stateful ones (sessions, the database) are where engineering effort
-concentrates. **Push state down into the persistence layer and keep everything above it
-stateless** — then horizontal scaling of the upper layers is routine, and the database is
-the one deliberate hard problem (replicas, failover clusters, distributed SQL — each
-trading consistency, cost, and complexity; choose knowingly).
+For every runtime, store, queue, and provider, answer: what happens when it is slow, unavailable,
+duplicated, or returns malformed data? Specify timeouts, bounded retries with jitter, concurrency
+limits, backpressure, graceful degradation, and recovery. Never retry a non-idempotent operation
+without an idempotency mechanism.
 
-### Budget capacity from measured cost
+## Architecture record
 
-Plan capacity from the measured per-request cost of your actual pages under your actual
-load (`core-operate-observability` supplies the numbers), with explicit headroom — not
-from vendor rules of thumb. Specific numbers age; the discipline doesn't.
-
-### Design for any machine to die
-
-Multiple front-ends behind a load balancer buy both capacity and failover. The test for
-every component: this machine disappears — does the site stay up? Single points of
-failure are found at design time, not during the incident
-(`core-operate-incident-response` handles the ones that ship anyway).
+Extend the core decision record with service boundaries, state ownership, consistency model,
+failure modes, capacity evidence, deployment topology, and the signals that would justify a split.
+Hand contracts to `backend-build-api-surface`, persistence to `backend-build-data-and-storage`, and
+runtime protections to `backend-build-backend-security`.

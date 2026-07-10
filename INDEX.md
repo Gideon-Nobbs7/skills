@@ -4,23 +4,23 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## ai-ml/1-setup
 
-- [ ] [`ai-ml-setup-model-selection`](ai-ml/1-setup/model-selection/SKILL.md) — stub
+- [x] [`ai-ml-setup-model-selection`](ai-ml/1-setup/model-selection/SKILL.md) — draft
 
 ## ai-ml/3-build
 
-- [ ] [`ai-ml-build-agents-and-tools`](ai-ml/3-build/agents-and-tools/SKILL.md) — stub
+- [x] [`ai-ml-build-agents-and-tools`](ai-ml/3-build/agents-and-tools/SKILL.md) — draft
 - [x] [`ai-ml-build-ai-security`](ai-ml/3-build/ai-security/SKILL.md) — draft
-- [ ] [`ai-ml-build-llm-app-architecture`](ai-ml/3-build/llm-app-architecture/SKILL.md) — stub
-- [ ] [`ai-ml-build-ml-data-pipelines`](ai-ml/3-build/ml-data-pipelines/SKILL.md) — stub
-- [ ] [`ai-ml-build-prompting-and-context`](ai-ml/3-build/prompting-and-context/SKILL.md) — stub
+- [x] [`ai-ml-build-llm-app-architecture`](ai-ml/3-build/llm-app-architecture/SKILL.md) — draft
+- [x] [`ai-ml-build-ml-data-pipelines`](ai-ml/3-build/ml-data-pipelines/SKILL.md) — draft
+- [x] [`ai-ml-build-prompting-and-context`](ai-ml/3-build/prompting-and-context/SKILL.md) — draft
 
 ## ai-ml/4-verify
 
-- [ ] [`ai-ml-verify-evals`](ai-ml/4-verify/evals/SKILL.md) — stub
+- [x] [`ai-ml-verify-evals`](ai-ml/4-verify/evals/SKILL.md) — draft
 
 ## ai-ml/6-operate
 
-- [ ] [`ai-ml-operate-model-monitoring`](ai-ml/6-operate/model-monitoring/SKILL.md) — stub
+- [x] [`ai-ml-operate-model-monitoring`](ai-ml/6-operate/model-monitoring/SKILL.md) — draft
 
 ## backend/1-setup
 
@@ -28,9 +28,9 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## backend/3-build
 
-- [ ] [`backend-build-api-surface`](backend/3-build/api-surface/SKILL.md) — stub
-- [ ] [`backend-build-backend-security`](backend/3-build/backend-security/SKILL.md) — stub
-- [ ] [`backend-build-data-and-storage`](backend/3-build/data-and-storage/SKILL.md) — stub
+- [x] [`backend-build-api-surface`](backend/3-build/api-surface/SKILL.md) — draft
+- [x] [`backend-build-backend-security`](backend/3-build/backend-security/SKILL.md) — draft
+- [x] [`backend-build-data-and-storage`](backend/3-build/data-and-storage/SKILL.md) — draft
 
 ## blogs/2-design
 
@@ -47,11 +47,11 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## cli/2-design
 
-- [ ] [`cli-design-cli-design`](cli/2-design/cli-design/SKILL.md) — stub
+- [x] [`cli-design-cli-design`](cli/2-design/cli-design/SKILL.md) — draft
 
 ## cli/5-ship
 
-- [ ] [`cli-ship-distribution`](cli/5-ship/distribution/SKILL.md) — stub
+- [x] [`cli-ship-distribution`](cli/5-ship/distribution/SKILL.md) — draft
 
 ## core/0-foundations
 
@@ -62,7 +62,7 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 - [x] [`godfile-navigator`](core/0-foundations/navigator/SKILL.md) — ready
 - [x] [`core-foundations-performance-values`](core/0-foundations/performance-values/SKILL.md) — draft
 - [x] [`core-foundations-security-mindset`](core/0-foundations/security-mindset/SKILL.md) — draft
-- [ ] [`core-foundations-vocabulary`](core/0-foundations/vocabulary/SKILL.md) — stub
+- [x] [`core-foundations-vocabulary`](core/0-foundations/vocabulary/SKILL.md) — draft
 - [x] [`core-foundations-writing-skills`](core/0-foundations/writing-skills/SKILL.md) — draft
 
 ## core/1-setup
@@ -123,29 +123,29 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## libraries/2-design
 
-- [ ] [`libraries-design-consumer-api-design`](libraries/2-design/consumer-api-design/SKILL.md) — stub
+- [x] [`libraries-design-consumer-api-design`](libraries/2-design/consumer-api-design/SKILL.md) — draft
 
 ## libraries/5-ship
 
-- [ ] [`libraries-ship-publishing-and-compatibility`](libraries/5-ship/publishing-and-compatibility/SKILL.md) — stub
+- [x] [`libraries-ship-publishing-and-compatibility`](libraries/5-ship/publishing-and-compatibility/SKILL.md) — draft
 
 ## mobile/1-setup
 
-- [ ] [`mobile-setup-platform-standards`](mobile/1-setup/platform-standards/SKILL.md) — stub
+- [x] [`mobile-setup-platform-standards`](mobile/1-setup/platform-standards/SKILL.md) — draft
 
 ## mobile/2-design
 
-- [ ] [`mobile-design-motion-and-gestures`](mobile/2-design/motion-and-gestures/SKILL.md) — stub
-- [ ] [`mobile-design-views-and-navigation`](mobile/2-design/views-and-navigation/SKILL.md) — stub
+- [x] [`mobile-design-motion-and-gestures`](mobile/2-design/motion-and-gestures/SKILL.md) — draft
+- [x] [`mobile-design-views-and-navigation`](mobile/2-design/views-and-navigation/SKILL.md) — draft
 
 ## mobile/3-build
 
-- [ ] [`mobile-build-device-realities`](mobile/3-build/device-realities/SKILL.md) — stub
-- [ ] [`mobile-build-mobile-a11y-and-localization`](mobile/3-build/mobile-a11y-and-localization/SKILL.md) — stub
+- [x] [`mobile-build-device-realities`](mobile/3-build/device-realities/SKILL.md) — draft
+- [x] [`mobile-build-mobile-a11y-and-localization`](mobile/3-build/mobile-a11y-and-localization/SKILL.md) — draft
 
 ## mobile/5-ship
 
-- [ ] [`mobile-ship-mobile-release`](mobile/5-ship/mobile-release/SKILL.md) — stub
+- [x] [`mobile-ship-mobile-release`](mobile/5-ship/mobile-release/SKILL.md) — draft
 
 ## papers/1-setup
 
@@ -173,19 +173,19 @@ One line per skill. Status: stub → draft → ready. Regenerate after changes.
 
 ## web/1-setup
 
-- [ ] [`web-setup-standards-and-browser-support`](web/1-setup/standards-and-browser-support/SKILL.md) — stub
+- [x] [`web-setup-standards-and-browser-support`](web/1-setup/standards-and-browser-support/SKILL.md) — draft
 
 ## web/2-design
 
-- [ ] [`web-design-responsive-layout`](web/2-design/responsive-layout/SKILL.md) — stub
-- [ ] [`web-design-web-typography`](web/2-design/web-typography/SKILL.md) — stub
+- [x] [`web-design-responsive-layout`](web/2-design/responsive-layout/SKILL.md) — draft
+- [x] [`web-design-web-typography`](web/2-design/web-typography/SKILL.md) — draft
 
 ## web/3-build
 
-- [ ] [`web-build-rendering-and-delivery`](web/3-build/rendering-and-delivery/SKILL.md) — stub
-- [ ] [`web-build-web-accessibility`](web/3-build/web-accessibility/SKILL.md) — stub
-- [ ] [`web-build-web-localization`](web/3-build/web-localization/SKILL.md) — stub
+- [x] [`web-build-rendering-and-delivery`](web/3-build/rendering-and-delivery/SKILL.md) — draft
+- [x] [`web-build-web-accessibility`](web/3-build/web-accessibility/SKILL.md) — draft
+- [x] [`web-build-web-localization`](web/3-build/web-localization/SKILL.md) — draft
 
 ## web/5-ship
 
-- [ ] [`web-ship-web-release`](web/5-ship/web-release/SKILL.md) — stub
+- [x] [`web-ship-web-release`](web/5-ship/web-release/SKILL.md) — draft
