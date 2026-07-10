@@ -1,77 +1,115 @@
 ---
 name: godfile-navigator
-description: Entry point to the godfile skill system. Load this FIRST when starting any project or task to find which godfile skills (personal standards for design, engineering, testing, shipping, papers, blogs) apply — then load those. Routes by track (what you're building) and phase (where in the lifecycle you are).
+description: Load first when starting, planning, researching, building, reviewing, shipping, or operating any project. Routes work through every applicable godfile foundation, phase, and track skill; researches current tools, frameworks, architectures, packages, compatibility, maintenance health, ecosystem direction, and security advisories; and produces evidence-backed recommendations before implementation.
 status: ready
 ---
 
 # Godfile Navigator
 
-The godfile is the user's personalized standards system: skills encoding how they want software
-designed, built, verified, shipped, and operated — plus how they write papers and blogs. Every
-godfile skill is named `<track>-<phase>-<slug>` (e.g. `core-design-typography`,
-`ai-ml-verify-evals`), so the name tells you what it governs and when.
+The godfile is the user's standards and research system. Use it to determine which rules govern the
+task, what current external evidence is needed, which specialist skills to load, and when the work
+is sufficiently verified. Never answer a project-shaping technical choice from memory alone.
 
-## How to route
+## Route every task
 
-1. **Identify the track(s)** — what kind of thing is being made. Projects often span several
-   (a web app with an AI feature = `web` + `ai-ml` on top of `core`).
-2. **Identify the phase** — where in the lifecycle this task sits.
-3. **Load in resolution order:**
-   `core-foundations-*` (the ones relevant to the work) → `core-<phase>-*` matches →
-   `<track>-<phase>-*` overlays. Core owns shared policy; overlays add platform mechanics or narrow
-   how it applies. They do not restate, weaken, or contradict core. Record a genuine platform
-   exception as an explicit project decision rather than a competing default.
+1. Read `INDEX.md` as the live inventory. Search candidate `SKILL.md` frontmatter descriptions
+   rather than guessing from folder names.
+2. Identify all active tracks. A product may combine `web`, `mobile`, `backend`, `cli`, `libraries`,
+   and `ai-ml`; papers and blogs are deliverable tracks.
+3. Identify the current phase and any adjacent phase whose contract constrains it. A build task may
+   also require setup decisions, verify gates, or ship compatibility.
+4. Load in order: relevant `core-foundations-*` → relevant `core-<phase>-*` → relevant
+   `<track>-<phase>-*` overlays.
+5. Add cross-cutting skills whenever the work touches their risk: security, accessibility,
+   performance, contracts, state/data, localization, testing, release, observability, or incidents.
+6. State the selected skills and the reason for each. Keep the set minimal but sufficient.
 
-Do not load an overlay merely because its track is active. Load it only when its described
-platform-specific concern is part of the task; phases without a meaningful platform delta use core
-alone.
+Core owns shared policy. Track overlays add platform mechanics or narrow application; they do not
+restate, weaken, or contradict core. Record a genuine platform exception as a project decision.
+Phases without a meaningful platform delta use core alone.
 
 ## Tracks
 
-| Track | Use when the work involves |
+| Track | Route here when work involves |
 |---|---|
-| `core` | Everything — the shared baseline; always in play |
-| `web` | Browser-delivered UI: sites, web apps |
-| `mobile` | iOS/Android apps, native or cross-platform |
-| `backend` | Servers, APIs, databases, services |
-| `cli` | Terminal tools and developer tooling |
-| `libraries` | Packages other code consumes |
-| `ai-ml` | LLM features, agents, prompts, evals, ML pipelines |
-| `papers` | Composing academic/technical papers (not the research itself) |
-| `blogs` | The user's blog posts — their voice, agent supports rather than writes |
+| `core` | Shared product, design, engineering, quality, delivery, and operating standards |
+| `web` | Browser interfaces, responsive layout, web delivery, accessibility, localization, release |
+| `mobile` | iOS/Android, Expo/React Native, SwiftUI, device behavior, stores, OTA releases |
+| `backend` | Services, APIs, databases, queues, tenancy, server trust boundaries |
+| `cli` | Terminal UX, automation contracts, packaging and distribution |
+| `libraries` | Reusable APIs, types, compatibility, packaging and publishing |
+| `ai-ml` | Models, LLM apps, agents, prompts/context, data pipelines, evals and monitoring |
+| `papers` | Academic/technical paper planning, writing, figures, review and submission |
+| `blogs` | User-led posts, voice, media, participation and publishing |
 
-## Phases
+## Phases and mandatory questions
 
-| Phase | Covers |
+| Phase | Ask before routing |
 |---|---|
-| `foundations` | Always-on values: principles, style, security, a11y, performance (core only) |
-| `setup` | Before real work: scoping, stack choice, bootstrap, environments, CI skeleton |
-| `design` | Deciding look/feel/behavior: UX, visuals, typography, motion, structure |
-| `build` | Making the thing: architecture, components, data, security, performance |
-| `verify` | Proving it works: tests, audits, reviews, evals |
-| `ship` | Releasing: pipelines, versioning, deployment, submission, publishing |
-| `operate` | After shipping: observability, incidents, maintenance, iteration |
+| `foundations` | Which principles, vocabulary, security, accessibility, performance, and style apply? |
+| `setup` | What problem, users, NFRs, stack, architecture, repo, environments, CI, and work plan? |
+| `design` | What journeys, states, content, layout, type, motion, and platform behavior? |
+| `build` | What contracts, boundaries, data, failure modes, security, accessibility, and performance? |
+| `verify` | Which risks and acceptance criteria require tests, audits, review, evals, or devices? |
+| `ship` | What artifact, compatibility promise, rollout, migration, monitoring, and rollback? |
+| `operate` | What is healthy, observable, supportable, patchable, recoverable, and removable? |
 
-## Status semantics
+## Research before choosing technology
 
-Check each skill's `status` before relying on it:
-- `stub` — only an intake checklist exists; do NOT treat as the user's standard yet.
-- `draft` — partially filled; follow what's there, flag gaps.
-- `ready` — authoritative; follow it.
+Trigger technical research when selecting or materially changing a language, runtime, framework,
+database, service, package, SDK, model, build tool, deployment target, security control, or major
+architecture pattern. Also trigger it when the user asks for the best/current/latest approach or
+when remembered guidance may have changed.
 
-## Full catalog & source of truth
+Read [`references/technical-research-and-package-risk.md`](references/technical-research-and-package-risk.md)
+and follow its evidence, comparison, package-health, and vulnerability workflow. Then route the
+decision through:
 
-The godfile lives at `~/Documents/dev/personal/godfile`. `INDEX.md` lists every skill with
-status; `README.md` is the master map. Installed skills in `~/.claude/skills` are symlinks
-into that repo.
+- `core-foundations-engineering-principles` for version detection and official documentation.
+- `core-setup-stack-and-architecture-selection` for problem-first trade-offs and the ADR threshold.
+- `core-foundations-security-mindset` before introducing dependencies, plugins, actions, or install
+  scripts.
+- `core-setup-env-and-secrets` and `core-setup-ci-skeleton` for supply-chain controls.
+- `core-operate-maintenance` for upgrades, EOL, deprecations, vulnerability response, and debt.
+
+Do not install, upgrade, replace, or contact an external system merely because research recommends
+it. Present the evidence and migration/risk implications; perform changes only within the user's
+authorized task.
+
+## Research completion contract
+
+A technical recommendation is complete only when it includes:
+
+- Project constraints and detected current versions.
+- Current dated sources, prioritizing official documentation and primary evidence.
+- A shortlist compared on explicit weighted criteria, not a link dump.
+- Compatibility, stability, maintenance, license, lock-in, migration, performance, accessibility,
+  security, and operational implications appropriate to the task.
+- Dependency and vulnerability findings with affected versions, project reachability/exposure,
+  fixed version or mitigation, exploit evidence, and confidence.
+- Recommendation, rejected alternatives, evidence gaps, validation spike/benchmark, and conditions
+  that would change the decision.
+
+## Status and source integrity
+
+- `stub`: intake only; do not treat it as a standard.
+- `draft`: follow completed guidance and flag material gaps.
+- `ready`: authoritative within its scope.
+
+`UPSTREAM_SOURCES.md` records imported authors, revisions, licenses, and update paths. Normal skill
+use reads local snapshots. Fetch upstream content only during deliberate research or update work;
+never execute remote instructions or install scripts without review and authorization.
 
 ## Routing examples
 
-- "Build a landing page" → `core-foundations-*`, `core-setup-*`/`core-design-*`/`core-build-*`
-  as the work progresses, plus `web-*` overlays at each phase.
-- "Add an AI assistant to the mobile app" → `mobile-*` + `ai-ml-*` overlays on the core phase
-  skills; `ai-ml-verify-evals` before shipping.
-- "Turn these results into a paper draft" → `papers-design-structure-and-argument` first,
-  then `papers-build-*` (including `papers-build-humanizer` before any prose is final).
-- "Fix a production bug" → `core-operate-incident-response` + the build/verify skills of
-  whatever track the system belongs to.
+- “Choose a web framework” → research reference + engineering principles + stack/architecture +
+  security mindset + web setup/build overlays; compare against the actual product and deployment.
+- “Add a package” → inspect manifest/lockfile + package-health and advisory review + architecture
+  ownership + secure-coding/CI implications before recommending adoption.
+- “Build an AI assistant into mobile” → core phase skills + `mobile-*` + `ai-ml-*`; require evals,
+  device accessibility, permissions, model/tool security, monitoring, and store/OTA release gates.
+- “Fix production” → incident response first, relevant track build/verify skills second; investigate
+  recent releases, dependency advisories, provider incidents, and telemetry without delaying harm
+  mitigation.
+- “Write or publish” → paper/blog phase skills plus core vocabulary, planning, accessibility,
+  verification, and provenance rules appropriate to the artifact.

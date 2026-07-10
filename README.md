@@ -244,10 +244,12 @@ Three mechanisms, layered:
    that's how skills get discovered mid-work. Intake rule: when filling a skill, its description
    must state *when it applies*, not just what it contains.
 3. **`godfile-navigator` is the entry point.** One skill (at `core/0-foundations/navigator/`,
-   installed with everything else) that explains the routing: identify track(s) → identify
-   phase → load core foundations, then core phase skills, then track overlays. Agents unsure
-   which skills apply load it first. It also defines status semantics (`stub` = checklist only,
-   not yet a standard; `draft` = partial; `ready` = authoritative).
+   installed with everything else) that routes by track, phase, and cross-cutting risk, then loads
+   core foundations, core phase skills, and platform overlays. It also runs evidence-led technical
+   research for frameworks, tools, packages, compatibility, maintenance health, ecosystem change,
+   CVEs, known exploitation, and upgrade/remediation decisions. Agents unsure which skills or
+   technologies apply load it first. It defines status semantics (`stub` = checklist only, not yet
+   a standard; `draft` = partial; `ready` = authoritative).
 
 Per-project wiring (later milestone): a project's CLAUDE.md names its tracks once, so agents in
 that repo know which overlays are in play without re-deriving it.
