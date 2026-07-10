@@ -2,14 +2,16 @@
 name: core-design-animation-vocabulary
 description: Use when someone describes a motion effect vaguely and needs its precise name to write a design brief, prompt, or implementation specification; this skill names effects, not designs them.
 status: draft
-upstream: https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/animation-vocabulary
 ---
 
 # Animation Vocabulary
 
 Turn a description of what someone sees or feels into the most useful motion term.
 
-**Upstream:** Emil Kowalski's [`animation-vocabulary`](https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/animation-vocabulary), adapted and tracked in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md). Consult its full glossary when this local quick map is insufficient.
+This skill includes a local copy of Emil Kowalski's original vocabulary glossary at
+[`references/upstream-animation-vocabulary.md`](references/upstream-animation-vocabulary.md).
+Read that reference when the quick map is insufficient. Provenance and update instructions live
+in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md).
 
 ## Response format
 
@@ -37,3 +39,7 @@ lecture.
 Once named, state the trigger, target, origin, animated properties, easing or spring behavior,
 duration or response, interruption rule, and reduced-motion equivalent. Then load
 `core-design-design-engineering` to decide whether the effect is justified.
+
+## Local source reference
+
+- Full imported source: [`references/upstream-animation-vocabulary.md`](references/upstream-animation-vocabulary.md)

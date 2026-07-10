@@ -20,6 +20,7 @@ Addy Osmani's `security-and-hardening`
 - [x] Dependency hygiene — vetting, lockfiles, audit triage
 - [x] Secrets in code — env layout, rotation on leak
 - [x] Safe defaults — headers, CORS, cookies, rate limits
+- [x] Pre-ship security review triggers — what must be checked before release
 - [ ] Per-stack specifics beyond JS/TS (Python, Go, mobile)
 - [ ] PII/encryption-at-rest standards for the user's projects
 
@@ -92,6 +93,24 @@ audit findings by severity × reachability: critical/high + reachable → fix no
 unreachable or dev-only → fix soon; moderate → next release; low → batch with regular
 updates. Every deferred fix gets a documented reason and a review date. Audits catch
 known CVEs, not malicious packages — hygiene covers the rest.
+
+### Pre-ship security pass
+
+Before release, confirm the secure-coding constraints held:
+
+- No secrets in code, config committed to the repo, logs, screenshots, or generated artifacts.
+- Dependency audit has no reachable critical/high issue without a documented exception and owner.
+- New or changed endpoints validate input, authenticate where required, authorize the specific
+  resource/action, and return generic external errors.
+- New permissions, roles, scopes, service accounts, CORS origins, webhooks, uploads, SSRF-capable
+  fetches, or sensitive data flows are explicitly reviewed.
+- Security headers, cookies, rate limits, and external callback signatures match the intended
+  deployment surface.
+- Any new sensitive-data category has retention, logging, encryption, and access-control behavior
+  named before launch.
+
+If any item is unclear, treat it as a blocker or escalate for a focused review. The launch gate in
+`core-ship-launch-checklist` verifies this pass happened; it does not replace it.
 
 ### If the code touches an LLM
 

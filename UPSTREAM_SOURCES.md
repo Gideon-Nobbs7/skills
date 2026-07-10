@@ -1,28 +1,119 @@
 # Upstream Sources
 
-This file records externally derived skills and the revision they were assessed against. Do not
-overwrite local guidance during an update: fetch the upstream source, compare the listed paths,
-then deliberately port changes that still fit the godfile's phase and one-home rules.
+This file records every external skill author or tool source whose work was adapted into the
+godfile and the revision imported. The usable source content is stored locally in each skill's
+`references/` folder, so normal skill use does not require loading GitHub. During an update: fetch
+the upstream source, compare the listed paths against the local imported references, then
+deliberately port changes that still fit the godfile's phase and one-home rules.
 
 ## Emil Kowalski — design-engineering skills
 
 - Repository: <https://github.com/emilkowalski/skills>
 - Assessed revision: [`f76beceb7d3fc8c43309cefad5a095a206103a4e`](https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e)
+- Local license copy: [`licenses/emilkowalski-skills-MIT.txt`](licenses/emilkowalski-skills-MIT.txt)
 - License: MIT (copyright Emil Kowalski, 2026); retain attribution when porting substantial text.
 
-| Godfile skill | Upstream path | Placement rationale |
-| --- | --- | --- |
-| `core-design-design-engineering` | `skills/emil-design-eng/SKILL.md` | Shared UI craft and motion decisions belong in Design. |
-| `core-design-fluid-interactions` | `skills/apple-design/SKILL.md` | Gesture, sheet, drag, and interruptible-motion behavior belongs in Design. |
-| `core-design-animation-vocabulary` | `skills/animation-vocabulary/SKILL.md` | A naming/reference aid for specifying motion during Design. |
-| `core-verify-motion-review` | `skills/review-animations/SKILL.md`, `STANDARDS.md` | A strict motion-specific review belongs in Verify. |
+| Godfile skill | Local imported source | Upstream path | Placement rationale |
+| --- | --- | --- | --- |
+| `core-design-design-engineering` | `core/2-design/design-engineering/references/upstream-emil-design-eng.md` | `skills/emil-design-eng/SKILL.md` | Shared UI craft and motion decisions belong in Design. |
+| `core-design-fluid-interactions` | `core/2-design/fluid-interactions/references/upstream-apple-design.md` | `skills/apple-design/SKILL.md` | Gesture, sheet, drag, and interruptible-motion behavior belongs in Design. |
+| `core-design-animation-vocabulary` | `core/2-design/animation-vocabulary/references/upstream-animation-vocabulary.md` | `skills/animation-vocabulary/SKILL.md` | A naming/reference aid for specifying motion during Design. |
+| `core-verify-motion-review` | `core/4-verify/motion-review/references/upstream-review-animations.md`, `core/4-verify/motion-review/references/upstream-motion-standards.md` | `skills/review-animations/SKILL.md`, `STANDARDS.md` | A strict motion-specific review belongs in Verify. |
+
+## Matt Pocock — engineering and collaborative-writing skills
+
+- Repository: <https://github.com/mattpocock/skills>
+- Assessed revision: [`391a2701dd948f94f56a39f7533f8eea9a859c87`](https://github.com/mattpocock/skills/tree/391a2701dd948f94f56a39f7533f8eea9a859c87)
+- Local license copy: [`licenses/mattpocock-skills-MIT.txt`](licenses/mattpocock-skills-MIT.txt)
+- License: MIT (copyright Matt Pocock, 2026); retain attribution when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-foundations-writing-skills` | `core/0-foundations/writing-skills/references/upstream-mattpocock-writing-great-skills.md` | `skills/productivity/writing-great-skills/SKILL.md` | Meta guidance for authoring godfile skills belongs in Foundations. |
+| `core-setup-scoping-and-requirements` | `core/1-setup/scoping-and-requirements/references/upstream-mattpocock-domain-modeling.md` | `skills/engineering/domain-modeling/SKILL.md` | Shared project language belongs in Setup. |
+| `core-setup-planning-and-work-breakdown` | `core/1-setup/planning-and-work-breakdown/references/upstream-mattpocock-{grilling,to-spec,to-tickets,wayfinder,triage,handoff}.md` | `skills/productivity/grilling/SKILL.md`, `skills/engineering/{to-spec,to-tickets,wayfinder,triage}/SKILL.md`, `skills/productivity/handoff/SKILL.md` | Refinement, specs, tickets, triage, and handoff are one planning workflow. |
+| `core-setup-repo-and-tooling-bootstrap` | `core/1-setup/repo-and-tooling-bootstrap/references/upstream-mattpocock-{setup-pre-commit,git-guardrails}.md` | `skills/misc/{setup-pre-commit,git-guardrails-claude-code}/SKILL.md` | Repository guardrails belong at setup. |
+| `core-design-ux-and-flows` | `core/2-design/ux-and-flows/references/upstream-mattpocock-prototype.md` | `skills/engineering/prototype/SKILL.md` | Prototypes answer design questions in Design. |
+| `core-build-architecture-in-practice` | `core/3-build/architecture-in-practice/references/upstream-mattpocock-{codebase-design,implement,design-an-interface}.md` | `skills/engineering/{codebase-design,implement}/SKILL.md`, `skills/deprecated/design-an-interface/SKILL.md` | Module/interface work belongs while building. |
+| `core-verify-test-authoring` | `core/4-verify/test-authoring/references/upstream-mattpocock-tdd.md` | `skills/engineering/tdd/SKILL.md` | Test-writing discipline belongs in Verify. |
+| `core-verify-code-review` | `core/4-verify/code-review/references/upstream-mattpocock-code-review.md` | `skills/engineering/code-review/SKILL.md` | Review mechanics belong in Verify. |
+| `core-operate-maintenance` | `core/6-operate/maintenance/references/upstream-mattpocock-{diagnosing-bugs,improve-codebase-architecture}.md` | `skills/engineering/{diagnosing-bugs,improve-codebase-architecture}/SKILL.md` | Diagnosis and architecture improvement belong after shipping. |
+| `blogs-build-voice-and-participation` | `blogs/3-build/voice-and-participation/references/upstream-mattpocock-{writing-fragments,writing-beats,writing-shape,edit-article}.md` | `skills/in-progress/{writing-fragments,writing-beats,writing-shape}/SKILL.md`, `skills/personal/edit-article/SKILL.md` | User-led blog drafting belongs in the blog Build phase. |
+
+## Addy Osmani — product engineering skills
+
+- Repository: <https://github.com/addyosmani/agent-skills>
+- Assessed revision: [`6bcfeb9dae52b11eaad23511acc165109746dbc3`](https://github.com/addyosmani/agent-skills/tree/6bcfeb9dae52b11eaad23511acc165109746dbc3)
+- Local license copy: [`licenses/addyosmani-agent-skills-MIT.txt`](licenses/addyosmani-agent-skills-MIT.txt)
+- License: MIT (copyright Addy Osmani, 2025); retain attribution when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-foundations-engineering-principles` | `core/0-foundations/engineering-principles/references/upstream-addyosmani-source-driven-development.md` | `skills/source-driven-development/SKILL.md` | Source-grounded work is an always-on engineering value. |
+| `core-setup-planning-and-work-breakdown` | `core/1-setup/planning-and-work-breakdown/references/upstream-addyosmani-{idea-refine,spec-driven-development,planning-and-task-breakdown}.md` | `skills/{idea-refine,spec-driven-development,planning-and-task-breakdown}/SKILL.md` | Complements the planning workflow with refinement and gated implementation. |
+| `core-setup-repo-and-tooling-bootstrap` | `core/1-setup/repo-and-tooling-bootstrap/references/upstream-addyosmani-git-workflow-and-versioning.md` | `skills/git-workflow-and-versioning/SKILL.md` | Day-to-day Git workflow belongs at setup. |
+| `core-setup-ci-skeleton` | `core/1-setup/ci-skeleton/references/upstream-addyosmani-ci-cd-and-automation.md` | `skills/ci-cd-and-automation/SKILL.md` | Continuous quality gates belong at setup. |
+| `core-build-apis-and-contracts` | `core/3-build/apis-and-contracts/references/upstream-addyosmani-api-and-interface-design.md` | `skills/api-and-interface-design/SKILL.md` | Contract design belongs in Build. |
+| `core-build-secure-coding` | `core/3-build/secure-coding/references/upstream-addyosmani-security-and-hardening.md` | `skills/security-and-hardening/SKILL.md` | Concrete controls belong at the keyboard. |
+| `core-build-ui-engineering` | `core/3-build/ui-engineering/references/upstream-addyosmani-frontend-ui-engineering.md` | `skills/frontend-ui-engineering/SKILL.md` | Cross-stack UI implementation rules belong in Build. |
+| `core-verify-code-review` | `core/4-verify/code-review/references/upstream-addyosmani-doubt-driven-development.md` | `skills/doubt-driven-development/SKILL.md` | Adversarial decision review belongs in Verify. |
+| `core-verify-ui-and-visual-verification` | `core/4-verify/ui-and-visual-verification/references/upstream-addyosmani-browser-testing-with-devtools.md` | `skills/browser-testing-with-devtools/SKILL.md` | Browser-based UI proof belongs in Verify. |
+| `core-ship-launch-checklist` | `core/5-ship/launch-checklist/references/upstream-addyosmani-shipping-and-launch.md` | `skills/shipping-and-launch/SKILL.md` | Final launch gate belongs in Ship. |
+| `core-ship-versioning-and-change-communication` | `core/5-ship/versioning-and-change-communication/references/upstream-addyosmani-git-workflow-and-versioning.md` | `skills/git-workflow-and-versioning/SKILL.md` | Consumer-facing versioning belongs in Ship. |
+| `core-ship-deployment-strategies` | `core/5-ship/deployment-strategies/references/upstream-addyosmani-{shipping-and-launch,deprecation-and-migration}.md` | `skills/{shipping-and-launch,deprecation-and-migration}/SKILL.md` | Controlled rollout and compatible migrations belong in Ship. |
+| `core-operate-sunsetting` | `core/6-operate/sunsetting/references/upstream-addyosmani-deprecation-and-migration.md` | `skills/deprecation-and-migration/SKILL.md` | Removal and migration belong in Operate. |
+| `core-operate-observability` | `core/6-operate/observability/references/upstream-addyosmani-observability-and-instrumentation.md` | `skills/observability-and-instrumentation/SKILL.md` | Instrumentation belongs in Operate. |
+
+## Vercel — React composition patterns
+
+- Repository: <https://github.com/vercel-labs/agent-skills>
+- Assessed revision: [`f8a72b9603728bb92a217a879b7e62e43ad76c81`](https://github.com/vercel-labs/agent-skills/tree/f8a72b9603728bb92a217a879b7e62e43ad76c81)
+- License: MIT as declared in the imported `SKILL.md` metadata; the repository had no root
+  `LICENSE` file at this revision.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-build-ui-engineering` | `core/3-build/ui-engineering/references/upstream-vercel-composition-patterns/` | `skills/composition-patterns/` | React-specific composition material informs the shared component-boundary rules without becoming a separate React skill. |
+
+## Seth Hobson — design systems and secrets management
+
+- Repository: <https://github.com/wshobson/agents>
+- Assessed revision: [`d7cf7dca8c4c7d0635e284f77204daa85552bfa4`](https://github.com/wshobson/agents/tree/d7cf7dca8c4c7d0635e284f77204daa85552bfa4)
+- Local license copy: [`licenses/wshobson-agents-MIT.txt`](licenses/wshobson-agents-MIT.txt)
+- License: MIT (copyright Seth Hobson, 2024); retain attribution when porting substantial text.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-setup-design-system-bootstrap` | `core/1-setup/design-system-bootstrap/references/upstream-wshobson-design-system-patterns/` | `plugins/ui-design/skills/design-system-patterns/` | Token hierarchy, themes, and component foundations belong in Setup. |
+| `core-setup-env-and-secrets` | `core/1-setup/env-and-secrets/references/upstream-wshobson-secrets-management.md` | `plugins/cicd-automation/skills/secrets-management/SKILL.md` | Secret delivery and rotation belong in Setup. |
+
+## Benji Taylor — Agentation visual feedback tool
+
+- Repository: <https://github.com/benjitaylor/agentation>
+- Assessed revision: [`8158a97c10c37e577b0a6e2d3175d143918216cd`](https://github.com/benjitaylor/agentation/tree/8158a97c10c37e577b0a6e2d3175d143918216cd)
+- Local license copy: [`licenses/agentation-PolyForm-Shield-1.0.0.txt`](licenses/agentation-PolyForm-Shield-1.0.0.txt)
+- License: PolyForm Shield 1.0.0 (copyright Benji Taylor, 2026). Its restrictions apply; this is
+  an optional internal-use integration, not a bundled runtime dependency.
+
+| Godfile skill | Local imported source(s) | Upstream path(s) | Placement rationale |
+| --- | --- | --- | --- |
+| `core-verify-ui-and-visual-verification` | `core/4-verify/ui-and-visual-verification/references/upstream-agentation-README.md` | `README.md` | Visual annotations become structured, inspectable context during UI verification. |
+
+## You — original godfile direction
+
+Every skill not listed in an external-skill table above is tagged as **from you**: it is your
+original direction, structure, and/or requested foundation. It has no external skill upstream to
+snapshot. Standards and documentary sources used to support it remain cited in the relevant
+skill; they are evidence, not attributed skill authors.
 
 ### Update procedure
 
-1. Fetch the upstream repository and inspect changes since the assessed revision for the mapped
-   path(s).
-2. Preserve local metadata, routing, and cross-references; port only guidance that belongs in the
+1. Fetch the matching upstream repository and inspect changes since that author's assessed
+   revision for the mapped path(s).
+2. Diff each changed upstream path against its local imported source file.
+3. Preserve local metadata, routing, and cross-references; port only guidance that belongs in the
    mapped phase.
-3. Update the revision above and the `Upstream` line in every affected skill in the same change.
-4. Review the result against the rest of the godfile, especially accessibility and performance
+4. Update the local imported source file, the adapted skill entrypoint, and that author's revision
+   above in the same change.
+5. Review the result against the rest of the godfile, especially accessibility and performance
    standards, before marking it ready.

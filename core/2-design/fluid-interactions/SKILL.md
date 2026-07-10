@@ -2,14 +2,16 @@
 name: core-design-fluid-interactions
 description: Use when designing or reviewing drag, swipe, sheets, drawers, spring motion, momentum, or any interaction the user can interrupt or reverse while it is moving.
 status: draft
-upstream: https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/apple-design
 ---
 
 # Fluid Interactions
 
 Design direct manipulation so it tracks the person, not a pre-scripted animation.
 
-**Upstream:** Emil Kowalski's [`apple-design`](https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/apple-design), adapted and tracked in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md).
+This skill includes a local copy of Emil Kowalski's original fluid interaction guidance at
+[`references/upstream-apple-design.md`](references/upstream-apple-design.md). Read that reference
+when the task needs detailed gesture, interruptibility, spring, or direct-manipulation behavior.
+Provenance and update instructions live in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md).
 
 ## Non-negotiables
 
@@ -51,3 +53,7 @@ Design direct manipulation so it tracks the person, not a pre-scripted animation
 Test gestures on a real touch device where possible. Review slow-motion/frame-by-frame for
 velocity seams, incorrect origins, and dropped frames; then load `core-verify-motion-review` for
 the release gate.
+
+## Local source reference
+
+- Full imported source: [`references/upstream-apple-design.md`](references/upstream-apple-design.md)

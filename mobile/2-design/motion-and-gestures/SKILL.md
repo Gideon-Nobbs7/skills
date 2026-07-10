@@ -6,7 +6,8 @@ status: stub
 
 # Mobile Motion & Gestures
 
-The native mechanics behind `core/2-design/interactions` and `micro-interactions`.
+The native mechanics behind `core-design-design-engineering` and
+`core-design-fluid-interactions`.
 
 ## Areas under consideration
 - [ ] Animation systems per stack — springs, driver APIs (Reanimated? SwiftUI animations?)

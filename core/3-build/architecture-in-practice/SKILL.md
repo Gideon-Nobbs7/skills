@@ -13,12 +13,17 @@ interface. Merged and adapted from Matt Pocock's `codebase-design` (+ DEEPENING,
 DESIGN-IT-TWICE), `implement`, and `design-an-interface`
 ([source](https://github.com/mattpocock/skills)).
 
+For architecture/pattern selection during implementation, use
+`core/1-setup/stack-and-architecture-selection/references/software-architecture-and-design-patterns-guide.md`
+as the lookup reference. Local code problems usually need a local pattern, not an architecture
+change.
+
 ## Areas under consideration
 - [x] Module boundary rules — deep-module vocabulary, seam discipline, deletion test
 - [x] When to restructure — deepening shallow clusters, dependency categories
 - [x] Interface exploration — design it twice
 - [x] Implementation working loop
-- [ ] Layering & dependency direction — what may depend on what, enforcement
+- [x] Layering & dependency direction — what may depend on what, enforcement
 - [ ] Feature organization — the folder/module shape a feature always takes
 - [ ] Shared code rules — when something graduates to shared, where it goes
 

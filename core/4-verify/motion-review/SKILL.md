@@ -2,7 +2,6 @@
 name: core-verify-motion-review
 description: Use for a motion-only review of UI code or a rendered interaction. Enforce purpose, frequency-appropriate timing, responsiveness, interruptibility, performance, and reduced-motion support; do not use as a general code-review skill.
 status: draft
-upstream: https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/review-animations
 ---
 
 # Motion Review
@@ -10,7 +9,11 @@ upstream: https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5
 Review motion against a high craft bar. Approval is earned: an animation that technically runs
 but is sluggish, ungrounded, overused, or janky is a regression.
 
-**Upstream:** Emil Kowalski's [`review-animations`](https://github.com/emilkowalski/skills/tree/f76beceb7d3fc8c43309cefad5a095a206103a4e/skills/review-animations) and its standards reference, adapted and tracked in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md).
+This skill includes local copies of Emil Kowalski's original review skill and standards:
+[`references/upstream-review-animations.md`](references/upstream-review-animations.md) and
+[`references/upstream-motion-standards.md`](references/upstream-motion-standards.md). Read them
+when a review needs the full rubric, numeric timing guidance, or example findings. Provenance
+and update instructions live in [`UPSTREAM_SOURCES.md`](../../../UPSTREAM_SOURCES.md).
 
 ## What to check
 
@@ -52,4 +55,9 @@ Prefer: delete unnecessary motion → reduce it → correct easing/origin → ma
 move it off layout/main-thread work → tune timing and polish → add accessibility support.
 
 For precise curves, duration bands, spring guidance, gesture thresholds, and review examples,
-consult the tracked upstream standards before asserting a numeric value.
+consult the local source standards before asserting a numeric value.
+
+## Local source references
+
+- Full imported review skill: [`references/upstream-review-animations.md`](references/upstream-review-animations.md)
+- Full imported standards: [`references/upstream-motion-standards.md`](references/upstream-motion-standards.md)

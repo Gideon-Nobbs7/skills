@@ -70,18 +70,13 @@ The non-negotiables loaded for every project regardless of phase or platform.
 
 - **2.1 UX & flows** — information architecture, navigation models, user flows,
   state design (empty / loading / error / success as first-class states).
-- **2.2 Visual design** — layout, spacing, color, elevation/depth, iconography.
-- **2.3 Typography** — scales, optical sizing, tracking/leading, responsive type, font loading.
+- **2.2 Typography** — scales, optical sizing, tracking/leading, responsive type, font loading.
+- **2.3 Design engineering** — applied visual composition, component polish, interaction feel,
+  and the decision framework that determines whether motion belongs at all.
 - **2.4 Motion & interaction**
-  - **2.4.0 Design engineering** — interaction polish, visual coherence, and the decision
-    framework that determines whether motion belongs at all.
-  - **2.4.1 Full-scale interactions** — page transitions, gestures, drag/swipe/sheets,
-    scroll-driven behavior.
-  - **2.4.2 Micro-interactions** — hover/press states, springs, feedback details, easing choices,
-    interruptibility, reduced-motion.
-  - **2.4.3 Fluid interactions** — direct manipulation, gesture velocity, momentum, and
+  - **2.4.1 Fluid interactions** — direct manipulation, gesture velocity, momentum, and
     interruptible drag/sheet behavior.
-  - **2.4.4 Animation vocabulary** — the precise terms used to specify intended effects.
+  - **2.4.2 Animation vocabulary** — the precise terms used to specify intended effects.
 - **2.5 Content & localization readiness** — copy tone, i18n-aware design (text expansion, RTL),
   formatting (dates, numbers, currency).
 - **2.6 Platform design conventions** — where web, iOS, and Android intentionally diverge
@@ -116,8 +111,7 @@ The non-negotiables loaded for every project regardless of phase or platform.
   screen-reader pass, contrast).
 - **4.5 Performance verification** — profiling, load testing, Core Web Vitals / app startup &
   frame metrics.
-- **4.6 Security review** — pre-ship security pass, dependency audit, secret scanning.
-- **4.7 Code review standards** — what review looks for, how findings are ranked and resolved.
+- **4.6 Code review standards** — what review looks for, how findings are ranked and resolved.
 
 ## 5. Ship — getting it into the world
 

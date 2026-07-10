@@ -25,9 +25,10 @@ checklist verifies live in `core-operate-observability`.
 
 - **Code** — all tests pass; build clean with no warnings; lint + types pass; reviewed;
   no unresolved TODOs or debug logging; error handling covers expected failure modes.
-- **Security** — no secrets in code/history; audit clean of critical/high; boundary
-  validation on user-facing endpoints; authn *and* authz checked; security headers; auth
-  rate limiting; CORS pinned to origins (per `core-build-secure-coding`).
+- **Security** — the pre-ship pass in `core-build-secure-coding` is complete: no secrets in
+  code/history/logs/artifacts; audit clean of reachable critical/high issues or documented
+  exception; boundary validation on user-facing endpoints; authn *and* authz checked; new
+  permissions/data flows reviewed; security headers; auth rate limiting; CORS pinned to origins.
 - **Performance** — Core Web Vitals in "Good"; no N+1 on critical paths; images
   optimized; bundle within budget; indexes on hot queries; caching for static assets and
   repeated queries.
