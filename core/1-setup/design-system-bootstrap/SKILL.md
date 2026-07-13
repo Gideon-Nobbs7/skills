@@ -1,7 +1,6 @@
 ---
 name: core-setup-design-system-bootstrap
 description: Use when establishing a project's reusable visual foundations before broad UI work—token hierarchy, typography, semantic color, spacing, elevation, theming, component primitives, and the rules that keep design and code aligned.
-status: draft
 ---
 
 # Design System Bootstrap

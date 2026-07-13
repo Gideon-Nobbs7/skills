@@ -1,7 +1,6 @@
 ---
 name: cli-design-cli-design
 description: Use when designing or changing a command-line interface, including commands, arguments, output, prompts, errors, exit status, help, and automation behavior; extends core UX and contract rules for terminal interfaces.
-status: draft
 ---
 
 # CLI Design

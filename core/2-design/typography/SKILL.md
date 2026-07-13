@@ -1,7 +1,6 @@
 ---
 name: core-design-typography
 description: "Design readable, professional typography for interfaces and content: typeface choice, pairing, hierarchy, type scale, line length, line height, spacing, responsive text, font licensing, multilingual glyph coverage, typographic correctness, and typography audits."
-status: draft
 ---
 
 # Typography

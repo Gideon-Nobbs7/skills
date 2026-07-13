@@ -1,7 +1,6 @@
 ---
 name: core-foundations-design-principles
 description: Always-on interface design principles for clarity, hierarchy, feedback, accessibility, restraint, predictability, and trade-off decisions before visual, typography, motion, or platform design skills add specifics.
-status: draft
 ---
 
 # Design Principles

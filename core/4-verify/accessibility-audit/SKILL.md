@@ -1,7 +1,6 @@
 ---
 name: core-verify-accessibility-audit
 description: Use before shipping any user-facing change to prove accessibility through automated checks plus manual keyboard, assistive-technology, contrast, resize/reflow, reduced-motion, and error-recovery passes; record blockers and evidence.
-status: draft
 ---
 
 # Accessibility Audit

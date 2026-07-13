@@ -1,7 +1,6 @@
 ---
 name: papers-build-section-writing
-description: How to write each paper section — abstract, intro, methods, results, discussion — to communicate well. (stub — awaiting content)
-status: stub
+description: How to write each paper section — abstract, intro, methods, results, discussion — to communicate well.
 ---
 
 # Section Writing

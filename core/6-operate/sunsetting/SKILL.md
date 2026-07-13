@@ -1,7 +1,6 @@
 ---
 name: core-operate-sunsetting
 description: Use when deprecating or removing systems, APIs, or features — code is a liability, the deprecation decision questions, advisory vs compulsory, strangler/adapter migration patterns, zombie code, and the removal checklist.
-status: draft
 ---
 
 # Sunsetting

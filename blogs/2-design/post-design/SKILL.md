@@ -1,7 +1,6 @@
 ---
 name: blogs-design-post-design
-description: Shaping a blog post — angle, structure, and framing for learn-and-showcase writing. (stub — awaiting content)
-status: stub
+description: Shaping a blog post — angle, structure, and framing for learn-and-showcase writing.
 ---
 
 # Post Design

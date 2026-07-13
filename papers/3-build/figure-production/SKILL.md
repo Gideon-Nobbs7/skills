@@ -1,7 +1,6 @@
 ---
 name: papers-build-figure-production
-description: Making paper figures — tools, export quality, captions, labeling, reproducibility. (stub — awaiting content)
-status: stub
+description: Making paper figures — tools, export quality, captions, labeling, reproducibility.
 ---
 
 # Figure Production

@@ -1,7 +1,6 @@
 ---
 name: core-build-architecture-in-practice
 description: Use when designing or restructuring module interfaces while coding — deep modules, seams and adapters, designing for testability, exploring alternative interfaces (design it twice), and the implementation working loop.
-status: draft
 ---
 
 # Architecture in Practice

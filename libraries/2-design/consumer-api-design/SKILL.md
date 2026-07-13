@@ -1,7 +1,6 @@
 ---
 name: libraries-design-consumer-api-design
 description: Use when designing or evolving a reusable library's public API, types, extension points, errors, defaults, or documentation; extends core contract and architecture rules for code consumed inside other programs.
-status: draft
 ---
 
 # Library Consumer API Design

@@ -1,7 +1,6 @@
 ---
 name: core-setup-repo-and-tooling-bootstrap
 description: Use when standing up or hardening a repo, or making any code change flow through git — trunk-based workflow, atomic commits with why-messages, worktrees for parallel agents, pre-commit hooks, and git-safety guardrails.
-status: draft
 ---
 
 # Repo & Tooling Bootstrap

@@ -1,7 +1,6 @@
 ---
 name: blogs-ship-publishing-and-sharing
-description: Publishing blog posts — platform, formatting, metadata, distribution and sharing. (stub — awaiting content)
-status: stub
+description: Publishing blog posts — platform, formatting, metadata, distribution and sharing.
 ---
 
 # Publishing & Sharing

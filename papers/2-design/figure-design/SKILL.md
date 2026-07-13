@@ -1,7 +1,6 @@
 ---
 name: papers-design-figure-design
-description: Designing paper figures — choosing the right visual for the claim, clarity rules, style consistency across a paper. (stub — awaiting content)
-status: stub
+description: Designing paper figures — choosing the right visual for the claim, clarity rules, style consistency across a paper.
 ---
 
 # Figure Design

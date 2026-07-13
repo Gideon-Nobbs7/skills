@@ -1,7 +1,6 @@
 ---
 name: core-setup-ci-skeleton
 description: Use when setting up or modifying CI pipelines — the quality-gate sequence every change passes, shift-left ordering, feeding failures back to agents, and keeping the pipeline under 10 minutes.
-status: draft
 ---
 
 # CI Skeleton

@@ -1,7 +1,6 @@
 ---
 name: papers-setup-venue-and-tooling
-description: Setting up a paper — target venue/format, LaTeX/Typst template, reference manager, style-guide constraints. (stub — awaiting content)
-status: stub
+description: Setting up a paper — target venue/format, LaTeX/Typst template, reference manager, style-guide constraints.
 ---
 
 # Venue & Tooling Setup

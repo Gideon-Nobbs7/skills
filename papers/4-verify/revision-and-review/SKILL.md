@@ -1,7 +1,6 @@
 ---
 name: papers-verify-revision-and-review
-description: Revising a draft — self-review passes, clarity editing, consistency and citation checks. (stub — awaiting content)
-status: stub
+description: Revising a draft — self-review passes, clarity editing, consistency and citation checks.
 ---
 
 # Revision & Review

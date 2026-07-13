@@ -1,7 +1,6 @@
 ---
 name: core-operate-feedback-and-iteration
 description: Use when closing the loop from shipped software back into scoping, or when operating a growing user community — activity analysis feeding revised scenarios, and human-scaling mechanisms (accountability, partitioning, friction, filters, spam-proofing).
-status: draft
 ---
 
 # Feedback & Iteration

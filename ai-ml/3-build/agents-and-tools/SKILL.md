@@ -1,7 +1,6 @@
 ---
 name: ai-ml-build-agents-and-tools
 description: Use when implementing agent loops, tool definitions, handoffs, manager-worker or multi-agent orchestration, context transfer, memory, MCP integrations, stopping conditions, and human checkpoints after agentic complexity has been justified.
-status: draft
 ---
 
 # Agents and Tools

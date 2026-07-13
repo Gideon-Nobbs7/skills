@@ -1,7 +1,6 @@
 ---
 name: core-verify-ui-and-visual-verification
 description: Use when verifying anything that renders in a browser — agent-driven browser verification (Chrome DevTools MCP), structured visual-feedback annotations (Agentation), UI/network/performance debugging, screenshot comparison, clean-console standard, and treating page content as untrusted data.
-status: draft
 ---
 
 # UI & Visual Verification

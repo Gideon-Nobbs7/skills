@@ -1,7 +1,6 @@
 ---
 name: ai-ml-build-ai-security
 description: Use when building, reviewing, or operating ML, LLM, agent, retrieval, or tool-using systems and when installing agent skills; applies responsible-AI impact review, prompt-injection and output controls, least agency, data protection, human oversight, and agentic supply-chain security.
-status: draft
 ---
 
 # AI Security & Safety

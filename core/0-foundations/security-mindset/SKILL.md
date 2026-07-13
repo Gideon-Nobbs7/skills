@@ -1,7 +1,6 @@
 ---
 name: core-foundations-security-mindset
 description: "Always-on security mindset for every project and phase: hostile inputs, explicit trust boundaries, least privilege, secret hygiene, sensitive-data defaults, abuse cases, and escalation triggers before secure-coding or platform-specific security skills add controls."
-status: draft
 ---
 
 # Security Mindset

@@ -1,7 +1,6 @@
 ---
 name: ai-ml-verify-evals
 description: Use when defining, implementing, or reviewing evaluations for nondeterministic model behavior, prompts, retrieval, tools, agents, safety, model changes, or ML pipelines; extends core testing with representative datasets, graders, repeated trials, error analysis, and release gates.
-status: draft
 ---
 
 # AI/ML Evaluations

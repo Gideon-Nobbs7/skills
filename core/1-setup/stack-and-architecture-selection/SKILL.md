@@ -1,7 +1,6 @@
 ---
 name: core-setup-stack-and-architecture-selection
 description: Use when choosing a stack, system architecture, architectural pattern, or design-pattern direction before building; applies problem-first trade-off evaluation, defaults to simple modular designs, records rejected alternatives, and uses the bundled architecture guide for pattern lookup.
-status: draft
 ---
 
 # Stack & Architecture Selection

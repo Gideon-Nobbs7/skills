@@ -1,7 +1,6 @@
 ---
 name: mobile-design-motion-and-gestures
 description: Use when designing or implementing mobile animations, transitions, direct-manipulation gestures, gesture conflicts, springs, scroll-linked effects, haptics, or reduced-motion behavior in Expo, React Native, SwiftUI, UIKit, Compose, or Android Views.
-status: draft
 ---
 
 # Mobile Motion and Gestures

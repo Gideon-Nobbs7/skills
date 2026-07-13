@@ -1,7 +1,6 @@
 ---
 name: backend-build-backend-security
 description: Use when implementing internet-facing services, server authorization, sensitive-data handling, tenant isolation, audit trails, or service identities; extends core secure coding with backend trust boundaries and infrastructure controls.
-status: draft
 ---
 
 # Backend Security

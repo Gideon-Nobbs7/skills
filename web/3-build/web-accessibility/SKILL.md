@@ -1,7 +1,6 @@
 ---
 name: web-build-web-accessibility
 description: Use when implementing browser accessibility with semantic HTML, ARIA, focus, keyboard behavior, live updates, routing, forms, or accessible names; extends the core accessibility implementation with web-platform mechanics.
-status: draft
 ---
 
 # Web Accessibility Implementation

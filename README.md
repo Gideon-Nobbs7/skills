@@ -42,6 +42,13 @@ application or add platform mechanics, but it may not restate, weaken, or contra
 platform genuinely requires an exception, record that decision explicitly instead of encoding a
 second default.
 
+**Automatic routing gate:** `godfile-navigator` is the mandatory first skill for every substantive
+request, including explanations, recommendations, diagnosis, research, edits, reviews, and
+operations. It selects the smallest sufficient foundation, phase, and track skill set before the
+agent answers or acts. Greetings, acknowledgements, casual conversation, necessary initial
+clarification, and requests that explicitly opt out of Godfile are exempt. This makes routing
+always-on without loading the whole library into every context.
+
 ## 0. Foundations (always-on, phase-independent)
 
 The non-negotiables loaded for every project regardless of phase or platform.
@@ -240,16 +247,16 @@ Three mechanisms, layered:
 
 1. **The name is the address.** `<track>-<phase>-<slug>` means any agent can narrow the whole
    system to the handful of skills matching what it's building and where it is in the lifecycle.
-2. **The description is the trigger.** Claude Code surfaces every installed skill's description;
-   that's how skills get discovered mid-work. Intake rule: when filling a skill, its description
-   must state *when it applies*, not just what it contains.
-3. **`godfile-navigator` is the entry point.** One skill (at `core/0-foundations/navigator/`,
-   installed with everything else) that routes by track, phase, and cross-cutting risk, then loads
-   core foundations, core phase skills, and platform overlays. It also runs evidence-led technical
-   research for frameworks, tools, packages, compatibility, maintenance health, ecosystem change,
-   CVEs, known exploitation, and upgrade/remediation decisions. Agents unsure which skills or
-   technologies apply load it first. It defines status semantics (`stub` = checklist only, not yet
-   a standard; `draft` = partial; `ready` = authoritative).
+2. **The description is the trigger.** Agents see every installed skill's description before they
+   load its body; that metadata drives automatic selection. Intake rule: when filling a skill, its
+   description must state *when it applies*, not just what it contains.
+3. **`godfile-navigator` is the mandatory entry point.** One skill (at
+   `core/0-foundations/navigator/`, installed with everything else) runs its routing gate before
+   every substantive response or action. It routes by track, phase, and cross-cutting risk, then
+   loads only the necessary core foundations, core phase skills, and platform overlays. It also
+   runs evidence-led technical research for frameworks, tools, packages, compatibility,
+   maintenance health, ecosystem change, CVEs, known exploitation, and upgrade/remediation
+   decisions.
 
 Per-project wiring (later milestone): a project's CLAUDE.md names its tracks once, so agents in
 that repo know which overlays are in play without re-deriving it.
@@ -269,7 +276,7 @@ When a skill/tool/principle arrives:
 
 ```
 README.md                              ← this map
-INDEX.md                               ← every skill + its status, for intake tracking
+INDEX.md                               ← complete inventory of skills
 <track>/<phase>/<skill-name>/SKILL.md  ← one skill per folder
 
 tracks:  core/  web/  mobile/  backend/  cli/  libraries/  ai-ml/
@@ -277,9 +284,9 @@ phases:  0-foundations/ (core only)  1-setup/  2-design/  3-build/
          4-verify/  5-ship/  6-operate/
 ```
 
-Each `SKILL.md` starts as a **stub**: frontmatter (name, description, status) plus an
-*areas under consideration* checklist. Intake fills the `## Skill` body with prescriptive,
-agent-followable content and flips `status: stub → draft → ready`.
+Each `SKILL.md` uses only `name` and `description` in frontmatter. New skills may begin with an
+*areas under consideration* checklist; intake fills the `## Skill` body with prescriptive,
+agent-followable content.
 
 **Intake workflow:** material arrives → slot it into the matching skill (or create one at
 `<track>/<phase>/`) → tick the checklist items it covers → rewrite as directives an agent can
@@ -288,19 +295,14 @@ act on → update `INDEX.md`.
 ## Installation
 
 ```sh
-./install.sh              # symlink every skill into ~/.claude/skills (system-wide)
-./install.sh --uninstall  # remove them
+./install.sh                       # symlink every skill into ~/.claude/skills
+./install.sh --codex               # symlink every skill into ~/.codex/skills
+./install.sh --all                 # install for Claude Code and Codex
+./install.sh --uninstall --codex   # remove Codex links managed by godfile
 ```
 
-Claude Code discovers skills from flat directories, so each skill's frontmatter `name` encodes
-its path (`core/2-design/typography` → `core-design-typography`). The hierarchy here stays the
-source of truth; the symlinks make every skill available in any codebase on this machine.
+Agents discover skills from flat directories, so each skill's frontmatter `name` encodes its path
+(`core/2-design/typography` → `core-design-typography`). The hierarchy here stays the source of
+truth; the symlinks make every skill available in any codebase on this machine.
 Re-run `./install.sh` after adding, renaming, or removing skills — it re-syncs and cleans up
 stale links.
-
-## Status
-
-- [x] Hierarchy agreed (`<track>/<phase>/<skill-name>`)
-- [x] Scaffold all skill stubs with areas under consideration
-- [ ] Skills intake (in progress — fill stubs as material arrives)
-- [ ] Wire into projects (per-project selection of tracks/phases)

@@ -1,7 +1,6 @@
 ---
 name: core-verify-performance-verification
 description: Use when proving performance targets are met before ship — continuous performance tests in the sprint cycle so code can't silently regress, load testing against stated conditions, and metric gates derived from the NFR criteria.
-status: draft
 ---
 
 # Performance Verification

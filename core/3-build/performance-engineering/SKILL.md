@@ -1,7 +1,6 @@
 ---
 name: core-build-performance-engineering
 description: Use when building for performance targets — the six measurable characteristics (response time, throughput, latency, scalability, resource utilization, stability) and the implementation levers from algorithms through caching, database, network, and architecture.
-status: draft
 ---
 
 # Performance Engineering

@@ -1,7 +1,6 @@
 ---
 name: core-build-localization-implementation
 description: "Implement internationalization and localization in code: string externalization, ICU messages, CLDR plural rules, locale detection, fallback chains, RTL plumbing, localized formatting, translation files, namespace loading, hreflang, pseudolocalization, and missing-key checks."
-status: draft
 ---
 
 # Localization Implementation

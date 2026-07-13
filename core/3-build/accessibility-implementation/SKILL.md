@@ -1,7 +1,6 @@
 ---
 name: core-build-accessibility-implementation
 description: "Use when implementing accessibility in code: semantics, accessible names, focus management, keyboard behavior, dynamic announcements, forms, media, reduced motion, pointer alternatives, and robust custom controls."
-status: draft
 ---
 
 # Accessibility Implementation

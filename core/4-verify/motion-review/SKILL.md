@@ -1,7 +1,6 @@
 ---
 name: core-verify-motion-review
 description: Use for a motion-only review of UI code or a rendered interaction. Enforce purpose, frequency-appropriate timing, responsiveness, interruptibility, performance, and reduced-motion support; do not use as a general code-review skill.
-status: draft
 ---
 
 # Motion Review

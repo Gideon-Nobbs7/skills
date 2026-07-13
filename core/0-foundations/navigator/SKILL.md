@@ -1,7 +1,6 @@
 ---
 name: godfile-navigator
-description: Load first when starting, planning, researching, building, reviewing, shipping, or operating any project. Routes work through every applicable godfile foundation, phase, and track skill; researches current tools, frameworks, architectures, packages, compatibility, maintenance health, ecosystem direction, and security advisories; and produces evidence-backed recommendations before implementation.
-status: ready
+description: Mandatory first routing gate for every substantive request, response, recommendation, plan, explanation, diagnosis, review, research task, implementation, verification, release, or operational action. Always load before answering or using tools unless the user explicitly opts out of Godfile or the exchange is only a greeting, acknowledgement, or casual conversation with no artifact or decision. Selects the smallest sufficient set of applicable Godfile foundation, phase, and track skills; triggers current technical and security research when needed; and grounds the result in explicit reasons and evidence.
 ---
 
 # Godfile Navigator
@@ -9,6 +8,27 @@ status: ready
 The godfile is the user's standards and research system. Use it to determine which rules govern the
 task, what current external evidence is needed, which specialist skills to load, and when the work
 is sufficiently verified. Never answer a project-shaping technical choice from memory alone.
+
+## Run the pre-response gate
+
+Before answering, recommending, planning, editing, or calling a tool:
+
+1. Decide whether the request is substantive: it creates or changes an artifact, makes or explains
+   a decision, investigates a problem, evaluates work, or supplies guidance someone may act on.
+2. If substantive, route it through this navigator even when the task looks small or no platform
+   track is obvious.
+3. Select and read the smallest sufficient set of specialist skills before acting. Always include
+   the relevant core foundation or phase skill; add track overlays only for real platform deltas.
+4. Ground the response in the selected skills' principles, constraints, and verification contract.
+   Give concise reasons for material decisions rather than merely naming a skill.
+5. If no specialist skill fits, use the closest core foundations, say that no exact skill exists
+   when the gap matters, and do not invent a Godfile rule.
+
+Skip routing only for greetings, acknowledgements, casual conversation with no artifact or
+decision, a necessary clarifying question before the domain can be known, or an explicit user
+instruction to bypass Godfile. A status request about active work still uses the skills already
+selected for that work. Do not load every skill defensively; always loading this navigator means
+always making the routing decision, not always expanding the entire library.
 
 ## Route every task
 
@@ -90,11 +110,7 @@ A technical recommendation is complete only when it includes:
 - Recommendation, rejected alternatives, evidence gaps, validation spike/benchmark, and conditions
   that would change the decision.
 
-## Status and source integrity
-
-- `stub`: intake only; do not treat it as a standard.
-- `draft`: follow completed guidance and flag material gaps.
-- `ready`: authoritative within its scope.
+## Preserve source integrity
 
 `UPSTREAM_SOURCES.md` records imported authors, revisions, licenses, and update paths. Normal skill
 use reads local snapshots. Fetch upstream content only during deliberate research or update work;

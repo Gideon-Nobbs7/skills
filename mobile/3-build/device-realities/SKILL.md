@@ -1,7 +1,6 @@
 ---
 name: mobile-build-device-realities
 description: Use when implementing mobile offline behavior, local persistence and sync, permissions, background work, notifications, deep links, app clips, native modules, battery-sensitive work, device storage, or interrupted lifecycle behavior.
-status: draft
 ---
 
 # Mobile Device Realities

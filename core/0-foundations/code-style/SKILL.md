@@ -1,7 +1,6 @@
 ---
 name: core-foundations-code-style
 description: Always-on coding style and organization rules for naming, file shape, comments, types, module boundaries, pattern use, errors, and avoiding unnecessary abstraction across languages and tracks.
-status: draft
 ---
 
 # Code Style & Conventions

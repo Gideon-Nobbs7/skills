@@ -1,7 +1,6 @@
 ---
 name: core-foundations-writing-skills
 description: Use when writing, editing, or reviewing godfile skills themselves — the principles that make a skill predictable for agents (descriptions as triggers, information hierarchy, leading words, pruning, failure modes).
-status: draft
 ---
 
 # Writing Skills
@@ -19,7 +18,7 @@ Adapted from Matt Pocock's `writing-great-skills`
 - [x] Information hierarchy & progressive disclosure
 - [x] Leading words
 - [x] Pruning discipline & failure modes
-- [ ] Godfile-specific conventions — status lifecycle, one-home rule enforcement during review
+- [ ] Godfile-specific conventions — frontmatter schema and one-home rule enforcement during review
 
 ## Skill
 

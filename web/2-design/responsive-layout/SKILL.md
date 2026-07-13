@@ -1,7 +1,6 @@
 ---
 name: web-design-responsive-layout
 description: Use when designing web layouts that must adapt to viewport, container, content, zoom, orientation, input modality, or mobile browser behavior; extends core design engineering with browser layout mechanics.
-status: draft
 ---
 
 # Responsive Web Layout

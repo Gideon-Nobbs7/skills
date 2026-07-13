@@ -1,7 +1,6 @@
 ---
 name: blogs-build-showcase-and-media
-description: Code snippets, demos, screenshots, and figures in blog posts — showing the work well. (stub — awaiting content)
-status: stub
+description: Code snippets, demos, screenshots, and figures in blog posts — showing the work well.
 ---
 
 # Showcase & Media

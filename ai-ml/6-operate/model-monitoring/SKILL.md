@@ -1,7 +1,6 @@
 ---
 name: ai-ml-operate-model-monitoring
 description: Use when operating a deployed model, prompt, retrieval system, or agent and monitoring quality, drift, safety, tools, latency, cost, provider changes, feedback, rollout, rollback, retraining, or retirement.
-status: draft
 ---
 
 # Model Monitoring and AI Operations

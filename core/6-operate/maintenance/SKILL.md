@@ -1,7 +1,6 @@
 ---
 name: core-operate-maintenance
 description: Use when keeping shipped systems healthy — diagnosing hard bugs and performance regressions (build a tight feedback loop first), scanning for architecture-deepening refactors, dependency updates, and debt.
-status: draft
 ---
 
 # Maintenance

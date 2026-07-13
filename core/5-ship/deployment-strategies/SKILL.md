@@ -1,7 +1,6 @@
 ---
 name: core-ship-deployment-strategies
 description: Use when planning how a change reaches users — feature flags (deploy ≠ release, flags must die), staged rollout with metric thresholds, rollback plans written before deploy, and expand/contract schema migrations.
-status: draft
 ---
 
 # Deployment Strategies

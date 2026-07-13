@@ -1,7 +1,6 @@
 ---
 name: backend-build-api-surface
 description: Use when implementing or evolving backend HTTP, GraphQL, RPC, webhook, or event interfaces; extends core contract rules with transport semantics, authentication, idempotency, pagination, rate limits, and delivery guarantees.
-status: draft
 ---
 
 # Backend API Surface

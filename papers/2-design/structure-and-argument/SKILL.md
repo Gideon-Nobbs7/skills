@@ -1,7 +1,6 @@
 ---
 name: papers-design-structure-and-argument
-description: Designing a paper before drafting — outline, narrative arc, contribution framing, what each section must accomplish. (stub — awaiting content)
-status: stub
+description: Designing a paper before drafting — outline, narrative arc, contribution framing, what each section must accomplish.
 ---
 
 # Structure & Argument Design

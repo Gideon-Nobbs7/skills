@@ -1,7 +1,6 @@
 ---
 name: core-setup-planning-and-work-breakdown
 description: Use when turning an idea into actionable work — refining vague ideas (divergent/convergent), stress-testing a plan by interview (grilling), writing gated specs, breaking work into tracer-bullet tickets with blocking edges and checkpoints, charting oversized efforts as a wayfinder map, triaging issues, or handing off between sessions.
-status: draft
 ---
 
 # Planning & Work Breakdown

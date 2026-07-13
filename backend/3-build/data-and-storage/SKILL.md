@@ -1,7 +1,6 @@
 ---
 name: backend-build-data-and-storage
 description: Use when implementing backend schemas, queries, transactions, migrations, caches, queues, jobs, backups, or recovery; extends core state-and-data rules with durable server-side persistence mechanics.
-status: draft
 ---
 
 # Backend Data and Storage

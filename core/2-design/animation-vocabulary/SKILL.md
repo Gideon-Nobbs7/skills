@@ -1,7 +1,6 @@
 ---
 name: core-design-animation-vocabulary
 description: Use when someone describes a motion effect vaguely and needs its precise name to write a design brief, prompt, or implementation specification; this skill names effects, not designs them.
-status: draft
 ---
 
 # Animation Vocabulary

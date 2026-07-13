@@ -1,7 +1,6 @@
 ---
 name: mobile-setup-platform-standards
 description: Use when choosing native iOS, native Android, React Native, or Expo; setting minimum OS and device support; structuring a mobile project; or deciding where platform conventions and platform-specific behavior should differ.
-status: draft
 ---
 
 # Mobile Platform Standards

@@ -1,7 +1,6 @@
 ---
 name: web-build-rendering-and-delivery
 description: Use when choosing or implementing browser delivery through static generation, server rendering, client rendering, streaming, islands, hydration, edge execution, or CDN caching; extends core architecture and performance rules for HTML delivery.
-status: draft
 ---
 
 # Web Rendering and Delivery

@@ -1,7 +1,6 @@
 ---
 name: core-ship-release-pipeline
 description: Use when building or changing release automation—create one reproducible artifact, promote it through environments with explicit gates, protect credentials and approvals, preserve provenance, and keep rollback possible.
-status: draft
 ---
 
 # Release Pipeline

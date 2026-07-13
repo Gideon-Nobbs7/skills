@@ -1,7 +1,6 @@
 ---
 name: core-foundations-accessibility-baseline
 description: Always-on accessibility baseline for every user-facing artifact and interface. Use to enforce perceivable, operable, understandable, and robust access before design, build, platform overlays, or verification add specifics.
-status: draft
 ---
 
 # Accessibility Baseline

@@ -1,7 +1,6 @@
 ---
 name: mobile-design-views-and-navigation
 description: Use when designing or implementing mobile screen composition, stacks, tabs, modals, sheets, back behavior, deep-linked routes, lists, safe areas, keyboards, or adaptive phone, tablet, foldable, and multi-window layouts.
-status: draft
 ---
 
 # Mobile Views and Navigation

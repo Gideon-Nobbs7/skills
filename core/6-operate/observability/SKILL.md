@@ -1,7 +1,6 @@
 ---
 name: core-operate-observability
 description: Use when adding logging, metrics, tracing, or alerts — define the on-call questions first, structured events with correlation IDs, RED/USE metrics with bounded cardinality, symptom-based alerting, then verify the telemetry itself.
-status: draft
 ---
 
 # Observability

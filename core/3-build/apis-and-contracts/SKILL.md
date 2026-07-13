@@ -1,7 +1,6 @@
 ---
 name: core-build-apis-and-contracts
 description: Use when designing any public interface — REST/GraphQL endpoints, module contracts, component props — Hyrum's Law, contract-first, consistent error semantics, validate at boundaries, extend rather than break.
-status: draft
 ---
 
 # APIs & Contracts

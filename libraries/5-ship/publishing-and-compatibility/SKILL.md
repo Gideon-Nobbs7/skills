@@ -1,7 +1,6 @@
 ---
 name: libraries-ship-publishing-and-compatibility
 description: Use when packaging, publishing, versioning, deprecating, or changing compatibility for a reusable library; extends core release rules with package formats, public API compatibility, support matrices, and consumer verification.
-status: draft
 ---
 
 # Library Publishing and Compatibility

@@ -1,7 +1,6 @@
 ---
 name: ai-ml-setup-model-selection
 description: Use when choosing, comparing, benchmarking, routing, or replacing generative, embedding, vision, speech, or classical ML models; extends core architecture selection with quality, latency, cost, privacy, deployment, and model-lifecycle trade-offs.
-status: draft
 ---
 
 # AI/ML Model Selection

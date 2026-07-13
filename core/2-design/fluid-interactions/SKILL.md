@@ -1,7 +1,6 @@
 ---
 name: core-design-fluid-interactions
 description: Use when designing or reviewing drag, swipe, sheets, drawers, spring motion, momentum, or any interaction the user can interrupt or reverse while it is moving.
-status: draft
 ---
 
 # Fluid Interactions

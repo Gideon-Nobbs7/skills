@@ -1,7 +1,6 @@
 ---
 name: papers-build-writing-with-data
-description: Communicating data in prose — numbers in text, tables vs figures, narrating results honestly and clearly. (stub — awaiting content)
-status: stub
+description: Communicating data in prose — numbers in text, tables vs figures, narrating results honestly and clearly.
 ---
 
 # Writing with Data

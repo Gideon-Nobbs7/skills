@@ -1,7 +1,6 @@
 ---
 name: core-build-ui-engineering
 description: Use when turning settled interface designs into production components—component boundaries and APIs, composition, token consumption, styling, accessible states, motion implementation, and reuse without premature abstraction.
-status: draft
 ---
 
 # UI Engineering

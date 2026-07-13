@@ -1,7 +1,6 @@
 ---
 name: ai-ml-build-llm-app-architecture
 description: Use when designing an LLM application, deciding whether it needs a direct call, deterministic workflow, agent, multi-agent system, or framework, and defining model boundaries, state, structured output, streaming, failure handling, and human control.
-status: draft
 ---
 
 # LLM Application Architecture

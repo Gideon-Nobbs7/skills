@@ -1,7 +1,6 @@
 ---
 name: backend-setup-service-architecture
 description: Use when choosing backend service boundaries, deployment units, runtime topology, state placement, capacity assumptions, or failure domains; extends the core architecture decision with server-specific constraints.
-status: draft
 ---
 
 # Backend Service Architecture

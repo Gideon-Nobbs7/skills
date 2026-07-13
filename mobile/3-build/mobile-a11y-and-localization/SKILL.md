@@ -1,7 +1,6 @@
 ---
 name: mobile-build-mobile-a11y-and-localization
 description: Use when implementing or auditing VoiceOver, TalkBack, Switch Control, Voice Control, Dynamic Type or font scaling, mobile focus and semantics, system accessibility settings, app language, locale formatting, plurals, RTL, or localized mobile assets in Expo, React Native, SwiftUI, UIKit, Compose, or Android Views.
-status: draft
 ---
 
 # Mobile Accessibility and Localization

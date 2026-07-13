@@ -1,7 +1,6 @@
 ---
 name: core-verify-test-authoring
 description: Use when writing tests or doing TDD — the red→green loop, testing at pre-agreed seams, what makes a good test, mocking only at system boundaries, and the anti-patterns (implementation-coupled, tautological, horizontal slicing).
-status: draft
 ---
 
 # Test Authoring

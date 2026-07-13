@@ -1,7 +1,6 @@
 ---
 name: core-design-design-engineering
 description: "Use when designing or implementing a polished interface: decide whether motion earns its place, tune component feedback, transitions, spacing, depth, and the small details that make a UI feel deliberate."
-status: draft
 ---
 
 # Design Engineering

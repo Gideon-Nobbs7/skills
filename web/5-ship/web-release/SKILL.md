@@ -1,7 +1,6 @@
 ---
 name: web-ship-web-release
 description: Use when releasing a browser-delivered site or application, including hosting, CDN and cache policy, redirects, metadata, indexing, analytics consent, security headers, and production smoke checks; extends core shipping with web launch mechanics.
-status: draft
 ---
 
 # Web Release

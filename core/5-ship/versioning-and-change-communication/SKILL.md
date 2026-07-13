@@ -1,7 +1,6 @@
 ---
 name: core-ship-versioning-and-change-communication
 description: Use when cutting a release, choosing a version bump, tagging, or writing a changelog — semver as a promise to consumers, when-unsure-assume-breaking, tags as source of truth, human-curated changelogs written with the change.
-status: draft
 ---
 
 # Versioning & Change Communication

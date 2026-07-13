@@ -1,7 +1,6 @@
 ---
 name: core-setup-env-and-secrets
 description: Use when setting up or changing project configuration, local environments, CI/CD credentials, or secrets—separate configuration from secrets, validate at startup, use least-privilege delivery, prevent leaks, and plan rotation.
-status: draft
 ---
 
 # Environments & Secrets

@@ -1,7 +1,6 @@
 ---
 name: core-setup-scoping-and-requirements
 description: Use when pinning down what a project is before building — domain modeling and ubiquitous language (CONTEXT.md glossary), ADRs, the planning document (user classes, scenarios, competition, community design), and NFR capture across the fourteen quality attributes.
-status: draft
 ---
 
 # Scoping & Requirements

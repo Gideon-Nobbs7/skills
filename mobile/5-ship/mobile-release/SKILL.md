@@ -1,7 +1,6 @@
 ---
 name: mobile-ship-mobile-release
 description: Use when preparing, signing, beta testing, submitting, reviewing, staging, monitoring, rolling back, or updating iOS and Android apps through TestFlight, App Store Connect, Google Play, EAS Build/Submit/Update, or native release pipelines.
-status: draft
 ---
 
 # Mobile Release

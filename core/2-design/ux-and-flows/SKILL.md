@@ -1,7 +1,6 @@
 ---
 name: core-design-ux-and-flows
 description: Use when structuring a product's UX or answering a design question with a throwaway prototype — logic prototypes (interactive TUI over a pure state module) or UI prototypes (radically different variants switched by URL param).
-status: draft
 ---
 
 # UX & Flows

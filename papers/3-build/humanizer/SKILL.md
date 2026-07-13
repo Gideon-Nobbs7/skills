@@ -1,7 +1,6 @@
 ---
 name: papers-build-humanizer
-description: Making AI-drafted prose read like a human wrote it — voice, rhythm, removing AI tells. (stub — awaiting content)
-status: stub
+description: Making AI-drafted prose read like a human wrote it — voice, rhythm, removing AI tells.
 ---
 
 # Humanizer

@@ -1,7 +1,6 @@
 ---
 name: core-foundations-vocabulary
 description: Use when naming, writing, reviewing, or connecting product-management artifacts such as product briefs, PRDs, requirements, non-functional requirements, roadmaps, initiatives, epics, features, stories, tasks, bugs, risks, decisions, and issue states; establishes one shared project language across every track and phase.
-status: draft
 ---
 
 # Product and Project Vocabulary

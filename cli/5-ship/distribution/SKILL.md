@@ -1,7 +1,6 @@
 ---
 name: cli-ship-distribution
 description: Use when packaging, signing, publishing, installing, updating, or supporting a CLI across operating systems and package managers; extends core release and versioning rules with command-line distribution mechanics.
-status: draft
 ---
 
 # CLI Distribution

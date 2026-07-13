@@ -1,7 +1,6 @@
 ---
 name: web-setup-standards-and-browser-support
 description: Use when establishing a web project's browser support, progressive enhancement, platform-feature, polyfill, JavaScript, or compatibility policy; extends core stack selection with browser-runtime constraints.
-status: draft
 ---
 
 # Web Standards and Browser Support

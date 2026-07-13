@@ -1,7 +1,6 @@
 ---
 name: ai-ml-build-ml-data-pipelines
 description: Use when building datasets, labels, features, embeddings, fine-tuning data, training or inference pipelines, experiment tracking, model artifacts, data validation, or reproducible ML workflows; applies the Microsoft ML lifecycle checklist on top of core data engineering.
-status: draft
 ---
 
 # ML Data Pipelines

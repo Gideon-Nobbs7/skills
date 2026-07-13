@@ -1,7 +1,6 @@
 ---
 name: blogs-build-voice-and-participation
 description: Use when drafting blog posts with the user — their words carry the post; the agent supports through the fragments → beats/shape → edit pipeline (mine raw fragments by interview, assemble beat-by-beat with grounding, tighten prose), never ghostwriting.
-status: draft
 ---
 
 # Voice & Participation

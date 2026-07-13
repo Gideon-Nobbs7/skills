@@ -1,7 +1,6 @@
 ---
 name: papers-ship-submission-and-camera-ready
-description: Submitting — formatting compliance, packaging, anonymization, reviewer-response writing, camera-ready. (stub — awaiting content)
-status: stub
+description: Submitting — formatting compliance, packaging, anonymization, reviewer-response writing, camera-ready.
 ---
 
 # Submission & Camera-Ready

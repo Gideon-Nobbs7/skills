@@ -1,7 +1,6 @@
 ---
 name: core-build-state-and-data
 description: Design and implement application state, data fetching, caching, optimistic updates, offline sync, conflict handling, forms, validation, input metering, and server/client data boundaries across web, mobile, backend, and UI-heavy applications.
-status: draft
 ---
 
 # State & Data

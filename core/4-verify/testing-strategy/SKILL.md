@@ -1,7 +1,6 @@
 ---
 name: core-verify-testing-strategy
 description: Use when deciding what a project or feature must test before writing tests—map risks and acceptance criteria to the smallest effective test layer, define test data and quality gates, and explicitly record what is out of scope.
-status: draft
 ---
 
 # Testing Strategy

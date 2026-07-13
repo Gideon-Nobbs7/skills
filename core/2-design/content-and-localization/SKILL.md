@@ -1,7 +1,6 @@
 ---
 name: core-design-content-and-localization
 description: Design product copy and localization-ready interfaces before implementation. Use when defining tone, labels, errors, empty states, locale scope, regional variants, text expansion, RTL behavior, culturally appropriate content, format requirements, or translation-ready UI layouts.
-status: draft
 ---
 
 # Content & Localization Readiness

@@ -1,7 +1,6 @@
 ---
 name: web-design-web-typography
 description: Use when implementing web font loading, fallback metrics, responsive type, variable fonts, OpenType features, or typography performance; extends core typography with browser-specific mechanics.
-status: draft
 ---
 
 # Web Typography

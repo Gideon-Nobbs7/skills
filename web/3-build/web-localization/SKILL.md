@@ -1,7 +1,6 @@
 ---
 name: web-build-web-localization
 description: Use when implementing web locale routing, language negotiation, translation loading, RTL layout, localized metadata, alternate URLs, or locale switching; extends core localization implementation with browser and discovery mechanics.
-status: draft
 ---
 
 # Web Localization

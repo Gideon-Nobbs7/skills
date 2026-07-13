@@ -1,7 +1,6 @@
 ---
 name: ai-ml-build-prompting-and-context
 description: Use when writing or changing system instructions, prompt templates, few-shot examples, retrieval, RAG, citations, conversation context, compaction, memory, or token budgets for an LLM application or agent.
-status: draft
 ---
 
 # Prompting and Context Engineering

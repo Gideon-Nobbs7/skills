@@ -1,7 +1,6 @@
 ---
 name: core-ship-launch-checklist
 description: Use as the final gate before anything goes live — the pre-launch checklist across code/security/performance/a11y/infrastructure/docs, and the first-hour post-launch verification.
-status: draft
 ---
 
 # Launch Checklist

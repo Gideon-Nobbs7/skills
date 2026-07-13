@@ -1,7 +1,6 @@
 ---
 name: core-operate-incident-response
 description: Use when a production service, user journey, security posture, or reliability target is failing—declare and coordinate the incident, mitigate user harm first, communicate clearly, preserve evidence, restore safely, and turn learning into owned follow-up.
-status: draft
 ---
 
 # Incident Response

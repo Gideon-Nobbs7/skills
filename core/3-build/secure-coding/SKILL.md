@@ -1,7 +1,6 @@
 ---
 name: core-build-secure-coding
 description: Use when writing any code that touches user input, auth, sensitive data, or external services — threat-model first (STRIDE), the always/ask-first/never boundary tiers, OWASP injection/XSS/SSRF/access-control patterns, secrets and supply-chain hygiene.
-status: draft
 ---
 
 # Secure Coding

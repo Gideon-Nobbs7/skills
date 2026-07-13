@@ -1,7 +1,6 @@
 ---
 name: core-operate-documentation
 description: Use when creating, organizing, or updating project documentation and knowledge bases in any project — structure knowledge as an OKF bundle (markdown + frontmatter, index.md, log.md, cross-links) so both humans and agents can read, traverse, and maintain it.
-status: draft
 ---
 
 # Documentation & Knowledge
