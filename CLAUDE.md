@@ -27,7 +27,8 @@ This overrides any default attribution behavior. The work belongs to the person 
 
 ## 3. Writing — documents are for humans
 
-Documentation, descriptions, PRDs, and PRs are made for people to read. They should sound like a person wrote them.
+Documentation, descriptions, PRDs, and PRs are made for people to read. They should sound like a person wrote them. So should you.
 
 - Use the `human-writing` skill every time you write or edit prose meant for humans. It lives in this repo at `core/0-foundations/human-writing`.
+- Grade every response you give a human against that skill before sending it. If it sounds robotic, rewrite it until it doesn't.
 - Less is more, always. Cut before you add. Simple words over impressive ones.
