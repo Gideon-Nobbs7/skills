@@ -63,6 +63,10 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **0.6 Definitions & vocabulary** — shared terms so skills reference concepts consistently.
 - **0.7 Performance as a core value** — performance is not a phase; budgets are set at setup,
   spent during build, verified before ship, and watched in operation. Latency is UX.
+- **0.8 Human writing** — prose that reads as a person wrote it; the AI tells and how to write
+  past them. Applies to every document, description, and reply.
+- **0.9 Ponytail** — the laziest solution that works: YAGNI, then stdlib, then native, then one
+  line. Ships with `ponytail-help` (reference card) and `ponytail-gain` (impact scoreboard).
 
 ## 1. Setup — before the first real line of code
 
@@ -121,6 +125,9 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **4.5 Performance verification** — profiling, load testing, Core Web Vitals / app startup &
   frame metrics.
 - **4.6 Code review standards** — what review looks for, how findings are ranked and resolved.
+  - **4.6.1 Ponytail review** — a diff pass that hunts only over-engineering: what to delete,
+    what the stdlib already ships, which abstraction has one caller.
+  - **4.6.2 Ponytail audit** — the same hunt across the whole repo, ranked biggest cut first.
 
 ## 5. Ship — getting it into the world
 
@@ -137,6 +144,8 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **6.1 Observability** — logging, metrics, tracing, error tracking; what "healthy" means.
 - **6.2 Incident response** — detecting, triaging, fixing, and writing up production issues.
 - **6.3 Maintenance** — dependency updates, deprecations, migration playbooks, refactoring debt.
+  - **6.3.1 Ponytail debt** — harvests the `ponytail:` shortcut comments into a ledger so a
+    deferral can't quietly become permanent.
 - **6.4 Feedback & iteration** — analytics review, user feedback loops, deciding what's next.
 - **6.5 Documentation & knowledge** — what gets documented, where it lives, keeping it honest.
 - **6.6 Sunsetting** — deprecating features/projects cleanly.
@@ -271,12 +280,40 @@ When a skill/tool/principle arrives:
 3. **One home only.** If it seems to belong in two places, split it: the principle goes in the
    general section, the platform-specific application goes in the track.
 4. Cross-reference instead of duplicating.
+5. **Did it come from someone else?** Then it does not land until its license lands with it. See
+   the rule below.
+
+## Bringing in an external skill
+
+Anything written by someone else carries their license, and we honor it in full. No import is
+finished until all four of these are true:
+
+1. The upstream license file is copied to `licenses/<source>-<LICENSE>.txt`.
+2. `UPSTREAM_SOURCES.md` has a section naming the repository, the exact revision imported, the
+   license, the local license copy, and a row per skill mapping upstream path → local path with
+   the reason it lives where it does.
+3. Any downstream edit to the imported text is marked in that table, so a future update knows
+   what is ours and what is theirs.
+4. If the license requires the notice to travel with copies (MIT, BSD, Apache), a `LICENSE` sits
+   in each vendored skill folder too — each folder gets symlinked on its own, so the folder is
+   the unit that has to carry it.
+
+Most imports are **adapted**: the upstream text lands in the godfile skill's `references/` and its
+guidance is rewritten into our phase structure. A few are **vendored whole** — self-contained
+skills whose name is the invocation (`godfile-navigator`, `human-writing`, the `ponytail` suite).
+Renaming those would break how they are called, so they keep their upstream name and their
+`SKILL.md` is the imported source.
+
+Fetch only what is being imported. Upstream repos ship hooks, MCP servers, plugin manifests, and
+install scripts; none of that comes in, and none of it gets run.
 
 ## Repository layout
 
 ```
 README.md                              ← this map
 INDEX.md                               ← complete inventory of skills
+UPSTREAM_SOURCES.md                    ← who wrote what, which revision, under which license
+licenses/                              ← a copy of every external license
 <track>/<phase>/<skill-name>/SKILL.md  ← one skill per folder
 
 tracks:  core/  web/  mobile/  backend/  cli/  libraries/  ai-ml/
@@ -284,9 +321,10 @@ phases:  0-foundations/ (core only)  1-setup/  2-design/  3-build/
          4-verify/  5-ship/  6-operate/
 ```
 
-Each `SKILL.md` uses only `name` and `description` in frontmatter. New skills may begin with an
-*areas under consideration* checklist; intake fills the `## Skill` body with prescriptive,
-agent-followable content.
+Godfile-authored `SKILL.md` files use only `name` and `description` in frontmatter; vendored
+skills keep whatever frontmatter their author shipped. New skills may begin with an *areas under
+consideration* checklist; intake fills the `## Skill` body with prescriptive, agent-followable
+content.
 
 **Intake workflow:** material arrives → slot it into the matching skill (or create one at
 `<track>/<phase>/`) → tick the checklist items it covers → rewrite as directives an agent can

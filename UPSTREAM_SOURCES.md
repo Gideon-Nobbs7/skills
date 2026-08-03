@@ -248,6 +248,49 @@ deliberately port changes that still fit the godfile's phase and one-home rules.
 | --- | --- | --- | --- |
 | `mobile-build-mobile-a11y-and-localization` | `mobile/3-build/mobile-a11y-and-localization/references/upstream-community-access-mobile-accessibility.md` | `codex-skills/mobile-accessibility/SKILL.md` | React Native, Expo, SwiftUI/UIKit, Compose, and Android Views accessibility audit mechanics belong in the mobile build overlay. |
 
+## Dietrich Gebert — Ponytail over-engineering skills
+
+- Repository: <https://github.com/DietrichGebert/ponytail>
+- Assessed revision: [`16f29800fd2681bdf24f3eb4ccffe38be3baec6b`](https://github.com/DietrichGebert/ponytail/tree/16f29800fd2681bdf24f3eb4ccffe38be3baec6b)
+- Local license copy: [`licenses/ponytail-MIT.txt`](licenses/ponytail-MIT.txt)
+- License: MIT (copyright Dietrich Gebert, 2026). The MIT notice must travel with every copy, so
+  each of the six skill folders carries its own `LICENSE` alongside `SKILL.md`.
+
+Unlike the imports above, these six are **vendored whole** rather than adapted into godfile prose.
+They are self-contained operating modes and one-shot commands whose skill name *is* the invocation
+(`/ponytail`, `/ponytail-review`, …), so renaming them to the `<track>-<phase>-<skill>` convention
+would break the interface. The same exception already applies to `godfile-navigator` and
+`human-writing`. Each `SKILL.md` is therefore the imported source; there is no separate
+`references/upstream-*.md` copy. Only two edits were made downstream, both marked below.
+
+Only the `skills/` directory was imported. The upstream repository also ships hooks, an MCP
+server, plugin manifests, and install scripts; none of those were fetched into the godfile or run.
+
+| Godfile skill | Local file | Upstream path | Placement rationale |
+| --- | --- | --- | --- |
+| `ponytail` | `core/0-foundations/ponytail/SKILL.md` | `skills/ponytail/SKILL.md` | An always-on posture across designing, building, and reviewing code, so it sits with the other Foundations values next to `core-foundations-code-style`. |
+| `ponytail-review` | `core/4-verify/ponytail-review/SKILL.md` | `skills/ponytail-review/SKILL.md` | A diff review pass; complements `core-verify-code-review`, which keeps correctness and spec. |
+| `ponytail-audit` | `core/4-verify/ponytail-audit/SKILL.md` | `skills/ponytail-audit/SKILL.md` | The repo-wide form of the same review, so it shares the Verify home. |
+| `ponytail-debt` | `core/6-operate/ponytail-debt/SKILL.md` | `skills/ponytail-debt/SKILL.md` | Harvesting deferred shortcuts is debt tracking, which belongs with `core-operate-maintenance`. |
+| `ponytail-help` | `core/0-foundations/ponytail-help/SKILL.md` | `skills/ponytail-help/SKILL.md` | Reference card for the suite; lives beside the mode it documents. **Edited:** the "Update" section pointed at the Claude Code plugin marketplace, which does not apply to a vendored copy; it now points at the update procedure below. |
+| `ponytail-gain` | `core/0-foundations/ponytail-gain/SKILL.md` | `skills/ponytail-gain/SKILL.md` | Scoreboard for the suite; lives beside the mode it documents. **Edited:** the source line now names the upstream benchmarks explicitly and states the figures are the author's published medians, not reproduced here. |
+
+## You — human-writing
+
+- Repository: <https://github.com/blackprince001/human-writing-skill>
+- Local license copy: [`core/0-foundations/human-writing/LICENSE`](core/0-foundations/human-writing/LICENSE)
+- License: CC BY-SA 4.0. The skill adapts the English Wikipedia article
+  [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
+  also CC BY-SA 4.0, with contributors credited through that page's history. ShareAlike applies:
+  redistributed adaptations of this skill must carry the same license.
+
+Your own skill, moved into the godfile as its single home. Vendored whole for the same reason as
+Ponytail — the name is the interface.
+
+| Godfile skill | Local file | Placement rationale |
+| --- | --- | --- |
+| `human-writing` | `core/0-foundations/human-writing/SKILL.md` | Prose that reads as human is an always-on standard for every document and reply, per `CLAUDE.md`. |
+
 ## You — state and data foundation
 
 - Local source: `core/3-build/state-and-data/references/state-data-fetching-offline-input-reference.md`
