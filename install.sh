@@ -21,6 +21,26 @@ for arg in "$@"; do
   esac
 done
 
+# Install or replace the global agent instructions file next to the skill dir.
+# Claude Code reads ~/.claude/CLAUDE.md; Codex reads ~/.codex/AGENTS.md.
+sync_instructions() {
+  local target="$1"
+  local dest
+  case "$target" in
+    */.claude/*) dest="${HOME}/.claude/CLAUDE.md" ;;
+    */.codex/*)  dest="${HOME}/.codex/AGENTS.md" ;;
+    *) return ;;
+  esac
+  if [ "$uninstall" = true ]; then
+    rm -f "$dest"
+    echo "godfile: removed $dest"
+  else
+    mkdir -p "$(dirname "$dest")"
+    cp "$GODFILE_DIR/CLAUDE.md" "$dest"
+    echo "godfile: installed $dest"
+  fi
+}
+
 sync_target() {
   local target="$1"
   local count=0
@@ -63,4 +83,5 @@ sync_target() {
 
 for target in "${targets[@]}"; do
   sync_target "$target"
+  sync_instructions "$target"
 done
