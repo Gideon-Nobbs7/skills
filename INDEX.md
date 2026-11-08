@@ -74,9 +74,13 @@ One line per skill. Regenerate after changes.
 - [`core-setup-ci-skeleton`](core/1-setup/ci-skeleton/SKILL.md)
 - [`core-setup-design-system-bootstrap`](core/1-setup/design-system-bootstrap/SKILL.md)
 - [`core-setup-env-and-secrets`](core/1-setup/env-and-secrets/SKILL.md)
+- [`grill-me`](core/1-setup/grill-me/SKILL.md)
+- [`grill-with-docs`](core/1-setup/grill-with-docs/SKILL.md)
 - [`core-setup-planning-and-work-breakdown`](core/1-setup/planning-and-work-breakdown/SKILL.md)
 - [`core-setup-repo-and-tooling-bootstrap`](core/1-setup/repo-and-tooling-bootstrap/SKILL.md)
 - [`core-setup-scoping-and-requirements`](core/1-setup/scoping-and-requirements/SKILL.md)
+- [`to-spec`](core/1-setup/to-spec/SKILL.md)
+- [`to-tickets`](core/1-setup/to-tickets/SKILL.md)
 - [`core-setup-stack-and-architecture-selection`](core/1-setup/stack-and-architecture-selection/SKILL.md)
 
 ## core/2-design

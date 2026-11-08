@@ -73,7 +73,7 @@ The non-negotiables loaded for every project regardless of phase or platform.
 - **1.1 Scoping & requirements** — what are we building, for whom, success criteria, constraints.
 - **1.2 Stack & architecture selection** — decision guides per project type; when to choose what.
 - **1.3 Repo & tooling bootstrap** — repo layout, formatter/linter, type config, git hygiene,
-  editor/agent config (CLAUDE.md, skills wiring).
+  editor/agent config (CLAUDE.md, AGENTS.md, skills wiring).
 - **1.4 Environment & secrets** — env management, local dev setup, secrets handling from day one.
 - **1.5 Design system bootstrap** — tokens, type scale, color system, spacing, component library
   choice (build vs adopt).
@@ -332,11 +332,32 @@ act on → update `INDEX.md`.
 
 ## Installation
 
+Global installs symlink every skill, so re-running picks up updates:
+
 ```sh
-./install.sh                       # symlink every skill into ~/.claude/skills
-./install.sh --codex               # symlink every skill into ~/.codex/skills
-./install.sh --all                 # install for Claude Code and Codex
+./install.sh                       # Claude Code → ~/.claude/skills (default)
+./install.sh --codex               # Codex → ~/.agents/skills (+ ~/.codex/skills legacy)
+./install.sh --copilot             # VS Code Copilot/chat agents → ~/.copilot/skills (+ ~/.agents/skills)
+./install.sh --antigravity         # Antigravity → ~/.gemini/config/skills (+ ~/.gemini/skills)
+./install.sh --opencode            # opencode → ~/.config/opencode/skills
+./install.sh --all                 # all of the above
+./install.sh --all-users --opencode    # opencode for root and every /home user (run as root)
+./install.sh --home /root --opencode   # opencode for one specific user's home
 ./install.sh --uninstall --codex   # remove Codex links managed by godfile
+```
+
+Project-local installs copy (never symlink) so they can be committed and shared:
+
+```sh
+./install.sh --project                     # ./.claude/skills, ./.agents/skills, ./.github/skills, ./.opencode/skills
+./install.sh --project --codex --copilot   # selected agents only
+./install.sh --global --project --all      # both global links and project copies
+```
+
+Portable bundles for web upload (Claude claude.ai Settings, ChatGPT, Copilot web):
+
+```sh
+./install.sh --bundle              # one <name>.skill zip per skill in ./dist
 ```
 
 Agents discover skills from flat directories, so each skill's frontmatter `name` encodes its path

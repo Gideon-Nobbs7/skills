@@ -44,6 +44,13 @@ arguably the most valuable part; focus is saying no to good ideas.
 
 ### Grill plans before building
 
+For a still-vague idea with no repo behind it, run the stateless `grill-me` skill first —
+it aligns on the idea anywhere before this repo-bound grilling starts. In a repo with a
+change that fits one session and unsettled vocabulary, run `grill-with-docs` instead — it
+runs the same interview and writes the glossary and ADRs as it goes. When the deciding is
+done and the user wants the settled conversation written down, invoke the standalone
+`to-spec` skill instead of working the spec section here.
+
 Stress-test a plan by relentless interview: walk each branch of the design tree, resolving
 dependencies between decisions one by one, offering a recommended answer with every
 question. **One question at a time** — wait for the answer before the next; multiple
@@ -93,6 +100,9 @@ Complementary spec discipline (from spec-driven development):
   a simple task deserves a two-line spec: acceptance criteria, always.
 
 ### Break work into tracer-bullet tickets
+
+When the user wants a spec or settled conversation sliced into published tickets, invoke
+the standalone `to-tickets` skill.
 
 Each ticket is a **vertical slice**: a narrow but complete path through every layer
 (schema, API, UI, tests) — demoable on its own, sized to one fresh context window, with

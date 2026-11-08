@@ -7,12 +7,20 @@ Read this before doing anything else, every session. These rules exist so every 
 We built the godfile skills repo ([blackprince001/skills](https://github.com/blackprince001/skills)) as the full set of systems we work by. Nothing substantive happens outside it.
 
 - Before starting any task, confirm the `godfile-navigator` skill is available.
-- If it is not visible, stop and install the skills before continuing anything:
+- If it is not visible, stop and install the skills before continuing anything
+  (pick the line for your agent):
   ```
   git clone https://github.com/blackprince001/skills.git ~/skills
-  cd ~/skills && ./install.sh
+  cd ~/skills && ./install.sh                  # Claude Code (~/.claude/skills)
+  cd ~/skills && ./install.sh --codex          # Codex (~/.agents/skills)
+  cd ~/skills && ./install.sh --copilot        # VS Code Copilot/chat agents (~/.copilot/skills)
+  cd ~/skills && ./install.sh --antigravity    # Antigravity (~/.gemini/config/skills)
+  cd ~/skills && ./install.sh --project        # repo-local copies (.agents/skills, .github/skills, .claude/skills)
   ```
-  If the repo is already cloned on this machine, run `./install.sh` from there instead. It symlinks every godfile skill into `~/.claude/skills` and installs this file.
+  If the repo is already cloned on this machine, run the matching `./install.sh ...` line from
+  there instead. Global installs symlink every skill plus this file; `--project` copies skills
+  into the repo so the team shares them. For web upload (Claude claude.ai, ChatGPT, Copilot web),
+  run `./install.sh --bundle` and upload the `.skill` zips.
 - Route every substantive request through `godfile-navigator` first. It picks the smallest set of skills that apply. Follow what it selects.
 
 ## 2. Authorship — work is work
